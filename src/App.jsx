@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
 import "./App.css";
-import NavScrollExample from "./parts/Navbar";
+import Navbar from "./parts/Navbar";
 
 function App() {
   return (
     <>
-      <NavScrollExample />
+      <Navbar />
       <Outlet />
       <div>Footer</div>
     </>
