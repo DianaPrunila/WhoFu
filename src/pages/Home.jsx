@@ -1,5 +1,13 @@
+import { Carousel1 } from "../parts/homeParts/Carousels";
+import CategoryButtons from "../parts/../parts/homeParts/Buttons";
+
 const Home = () => {
-  return <div className="bg-red-500">Home</div>;
+  return (
+    <>
+      <Carousel1 />
+      <CategoryButtons />
+    </>
+  );
 };
 
-export default Home;
+export { Home };
