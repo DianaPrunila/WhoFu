@@ -3,3 +3,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    background-color: white;
+  }
+}
+.slick-slide > div {
+  margin: 0 10px;
+}
+/* 
+.navbar-toggler-icon {
+  color: blue;
+  background-color: brown;
+} */
