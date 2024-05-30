@@ -35,7 +35,6 @@ const CategoryButtons = () => {
         <GiGrain />
         Grains
       </Button>
-      <Button href="LegumeProducts">Legume-based Products</Button>
     </div>
   );
 };

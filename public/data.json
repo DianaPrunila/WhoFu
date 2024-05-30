@@ -5,7 +5,7 @@
     "category": "Legumes",
     "price": "2.00 €",
     "quantity": "1 kg",
-    "image": "https://images.unsplash.com/photo-1552585960-0e1069ce7405?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/lentils.avif"
   },
   {
     "id": 2,
@@ -13,15 +13,15 @@
     "category": "Legumes",
     "price": "2.00 €",
     "quantity": "1 kg",
-    "image": "https://images.unsplash.com/photo-1515543904379-3d757afe72e4?q=80&w=2570&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/chickpeas.avif"
   },
   {
     "id": 3,
-    "product_name": "Kidney Beans",
+    "product_name": "Kidney_Beans",
     "category": "Legumes",
     "price": "2.00 €",
     "quantity": "1 kg",
-    "image": "https://images.pexels.com/photos/6316671/pexels-photo-6316671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/kidney_beans.webp"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "category": "Grains",
     "price": "2.00 €",
     "quantity": "1 kg",
-    "image": "https://images.unsplash.com/photo-1598048851887-0263d4f43e73?q=80&w=2656&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/oats.avif"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "category": "Grains",
     "price": "2.00 €",
     "quantity": "1 kg",
-    "image": "https://images.unsplash.com/photo-1708949125682-c0cb09727101?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/bulgur.avif"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "category": "Grains",
     "price": "5.00 €",
     "quantity": "1 kg",
-    "image": "https://www.nopazzia.it/wp-content/uploads/2020/01/semi-di-quinoa.jpg"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/quinoa.jpg"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "category": "Vegetables",
     "price": "2.00 €",
     "quantity": "1 kg",
-    "image": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/kidney_beans.webp"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "category": "Vegetables",
     "price": "2.50 €",
     "quantity": "1 kg",
-    "image": "https://images.unsplash.com/photo-1614336215203-05a588f74627?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/broccoli.avif"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "category": "Vegetables",
     "price": "1.00 €",
     "quantity": "1 kg",
-    "image": "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/carrots.avif"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "category": "Fruits",
     "price": "2.00 €",
     "quantity": "each",
-    "image": "https://images.unsplash.com/photo-1601039641847-7857b994d704?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/avocado.avif"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "category": "Fruits",
     "price": "3.00 €",
     "quantity": "1 kg",
-    "image": "https://images.unsplash.com/photo-1543158181-e6f9f6712055?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/strawberries.avif"
   },
   {
     "id": 12,
@@ -93,31 +93,31 @@
     "category": "Fruits",
     "price": "5.00 €",
     "quantity": "1 kg",
-    "image": "https://images.unsplash.com/photo-1577069861033-55d04cec4ef5?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/raspberries.avif"
   },
   {
     "id": 13,
-    "product_name": "Tempeh",
-    "category": "Legume-based Products",
-    "price": "2.50 €",
-    "quantity": "200 g",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Tempeh_%288681605421%29.jpg/1599px-Tempeh_%288681605421%29.jpg?20140928062603"
+    "product_name": "Tomato",
+    "category": "Vegetables",
+    "price": "3.19 €",
+    "quantity": "1 kg ",
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/tomato.avif"
   },
   {
     "id": 14,
-    "product_name": "Hummus",
-    "category": "Legume-based Products",
-    "price": "2.00 €",
-    "quantity": "200 g",
-    "image": "https://images.unsplash.com/photo-1637949385162-e416fb15b2ce?q=80&w=2652&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "product_name": "Cherries",
+    "category": "Fruits",
+    "price": "3.50 €",
+    "quantity": "1 kg",
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/cherry.avif"
   },
   {
     "id": 15,
     "product_name": "Edamame",
-    "category": "Legume-based Products",
+    "category": "Legumes",
     "price": "2.50 €",
     "quantity": "500 g",
-    "image": "https://images.unsplash.com/photo-1563898655817-170c8a11efdf?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/edamame.avif"
   },
   {
     "id": 16,
@@ -125,7 +125,7 @@
     "category": "Pasta and Noodles",
     "price": "2.00 €",
     "quantity": "500 g",
-    "image": "https://get.pxhere.com/photo/food-fusilli-cuisine-rotini-dish-radiatori-ingredient-italian-food-recipe-pasta-comfort-food-1612729.jpg"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/edamame.avif"
   },
   {
     "id": 17,
@@ -133,7 +133,7 @@
     "category": "Pasta and Noodles",
     "price": "3.00 €",
     "quantity": "300 g",
-    "image": "https://cookingformysoul.com/wp-content/uploads/2022/08/dry-soba-noodles-1-min.jpg"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/soba.jpg"
   },
   {
     "id": 18,
@@ -141,7 +141,7 @@
     "category": "Pasta and Noodles",
     "price": "3.50 €",
     "quantity": "300 g",
-    "image": "https://images.unsplash.com/photo-1700323861852-069271b695b3?q=80&w=2531&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/udon.avif"
   },
   {
     "id": 19,
@@ -149,7 +149,7 @@
     "category": "Fermented Foods",
     "price": "2.50 €",
     "quantity": "500 g",
-    "image": "https://images.unsplash.com/photo-1583224964978-2257b960c3d3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/kimchi.avif"
   },
   {
     "id": 20,
@@ -157,7 +157,7 @@
     "category": "Fermented Foods",
     "price": "2.00 €",
     "quantity": "150 g",
-    "image": "https://dietitianjohna.com/wp-content/uploads/2023/02/plain-yogurt-purple-background.png"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/yogurt.webp"
   },
   {
     "id": 21,
@@ -165,6 +165,6 @@
     "category": "Fermented Foods",
     "price": "4.00 €",
     "quantity": "200 g",
-    "image": "https://recipes.net/wp-content/uploads/2024/02/what-is-miso-paste-1708331407.jpg"
+    "image": "C:/Users/Diana/Desktop/final-project/src/assets/images/foods/miso.jpg"
   }
 ]
