@@ -11,12 +11,16 @@ const Slides = () => {
   };
   return (
     <div className="w-3/4 m-auto">
-      <div className="mt-20">
+      <div className="mt-20 outline-black">
         <Slider {...settings}>
           {preview.map((p) => (
-            <div className=" h-[450px]">
-              <div className="h-56  flex justify-center items-center">
-                <img src={p.image} alt={p.product_name} className="h-44 w-44" />
+            <div className=" h-[450px] rounded-xl ">
+              <div className=" bg-lime-100 h-56  flex justify-center items-center rounded-t-xl">
+                <img
+                  src={p.image}
+                  alt={p.product_name}
+                  className="h-44 w-44 rounded-full"
+                />
               </div>
 
               <div className="flex flex-col justify-center items-center gap-4 p-4">

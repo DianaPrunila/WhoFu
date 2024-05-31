@@ -11,7 +11,7 @@ function NaviBar() {
   return (
     <Navbar expand="lg" className="bg-green-700 bg-body-tertiary">
       <Container fluid className="w-full">
-        <Navbar.Brand href="#">WhoFu</Navbar.Brand>
+        <Navbar.Brand href="/">WhoFu</Navbar.Brand>
         <Navbar.Toggle
           aria-controls="navbarScroll"
           className="bg-inverse bg-red-600"
