@@ -9,36 +9,97 @@ import NutsSeeds from "/images/foods/NutsSeeds.webp";
 import PastaNoodles from "/images/foods/PastaNoodles.jpg";
 import Vegetables from "/images/foods/Vegetables.jpg";
 
-function AutoLayoutExample() {
+function Categories() {
   return (
     <Container className="m-10 p-0">
       <Row>
         <Col className="p-0">
-          <img src={Vegetables} alt="" />
+          <a href="./Vegetables">
+            <Container>
+              <figure className="position-relative ">
+                <img src={Vegetables} alt="Vegetables" className="img-fluid" />
+                <figcaption className="center text-white">
+                  Vegetables
+                </figcaption>
+              </figure>
+            </Container>
+          </a>
         </Col>
         <Col className="p-0">
-          <img src={Fruits} alt="" />
+          <a href="./Grains">
+            <Container>
+              <figure className="position-relative ">
+                <img src={Grains} alt="Grains" className="img-fluid" />
+                <figcaption className="center text-white">Grains</figcaption>
+              </figure>
+            </Container>
+          </a>
         </Col>
         <Col className="p-0">
-          <img src={Grains} alt="" />
+          <a href="./Pasta">
+            <Container>
+              <figure className="position-relative ">
+                <img
+                  src={PastaNoodles}
+                  alt="Pasta & Noodles"
+                  className="img-fluid"
+                />
+                <figcaption className="center text-white">
+                  Pasta & Noodles
+                </figcaption>
+              </figure>
+            </Container>
+          </a>
         </Col>
       </Row>
       <Row>
         <Col className="p-0">
-          <img src={Legumes} alt="" />
+          <a href="./Fruits">
+            <Container>
+              <figure className="position-relative ">
+                <img src={Fruits} alt="Fruit" className="img-fluid" />
+                <figcaption className="center text-white">Fruit</figcaption>
+              </figure>
+            </Container>
+          </a>
         </Col>
         <Col className="p-0">
-          <img src={NutsSeeds} alt="" />
+          <a href="./NutsSeeds">
+            <Container>
+              <figure className="position-relative ">
+                <img src={NutsSeeds} alt="Nuts & Seeds" className="img-fluid" />
+                <figcaption className="center text-white">
+                  Nuts & Seeds
+                </figcaption>
+              </figure>
+            </Container>
+          </a>
         </Col>
         <Col className="p-0">
-          <img src={PastaNoodles} alt="" />
+          <a href="./Legumes">
+            <Container>
+              <figure className="position-relative ">
+                <img src={Legumes} alt="Legumes" className="img-fluid" />
+                <figcaption className="center text-white">Legumes</figcaption>
+              </figure>
+            </Container>
+          </a>
         </Col>
         <Col className="p-0">
-          <img src={Fermented} alt="" />
+          <a href="./Fermented">
+            <Container>
+              <figure className="position-relative ">
+                <img src={Fermented} alt="Fermented" className="img-fluid" />
+                <figcaption className="center text-white">
+                  Fermented foods
+                </figcaption>
+              </figure>
+            </Container>
+          </a>
         </Col>
       </Row>
     </Container>
   );
 }
 
-export default AutoLayoutExample;
+export default Categories;

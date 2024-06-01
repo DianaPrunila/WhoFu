@@ -27,7 +27,9 @@ const Slides = () => {
                 <p>{p.product_name}</p>
                 <p className="text-lime-600 text-xl font-semibold">{p.price}</p>
                 <p>{p.quantity}</p>
-                <button hre>Add to cart</button>
+                <a href="./Cart">
+                  <button>Add to cart</button>
+                </a>
               </div>
             </div>
           ))}
