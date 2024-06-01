@@ -3,6 +3,7 @@ import { Carousel1 } from "../parts/homeParts/Carousels";
 import Slides from "../parts/homeParts/Slides";
 import Banner from "../parts/homeParts/Banner";
 import "./Home.scss";
+import Categories from "../parts/homeParts/Categories";
 const Home = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const Home = () => {
       </div>
       <Slides />
       {/* <Seller /> */}
+      <Categories />
       <Banner />
     </>
   );

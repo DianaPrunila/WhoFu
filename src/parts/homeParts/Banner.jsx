@@ -16,9 +16,6 @@ const Banner = () => {
         </figure>
       </Container>
     </div>
-    // <div className="contai">
-    //   <img src="./images/green.png" alt="Banner" className="img-fluid" />
-    // </div>
   );
 };
 
