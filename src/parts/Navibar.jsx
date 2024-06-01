@@ -6,6 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { FaRegUser } from "react-icons/fa";
 import { GrFavorite } from "react-icons/gr";
 import { BsCart2 } from "react-icons/bs";
+import "./NaviBar.scss";
 
 function NaviBar() {
   return (

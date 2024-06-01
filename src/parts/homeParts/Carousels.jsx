@@ -1,7 +1,7 @@
 import Carousel from "react-bootstrap/Carousel";
-import imageOne from "C:/Users/Diana/Desktop/final-project/src/assets/images/imageOne.jpeg";
-import imageThree from "C:/Users/Diana/Desktop/final-project/src/assets/images/imageThree.jpeg";
-import imageTwo from "C:/Users/Diana/Desktop/final-project/src/assets/images/imageTwo.jpeg";
+import imageOne from "/images/other/imageOne.jpeg";
+import imageThree from "/images/other/imageThree.jpeg";
+import imageTwo from "/images/other/imageTwo.jpeg";
 import { useState } from "react";
 
 export const Carousel1 = () => {

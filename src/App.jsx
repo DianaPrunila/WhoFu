@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
-import Navibar from "./parts/Navbar";
+import Navibar from "./parts/Navibar";
 import Footer from "./parts/Footer";
 
 function App() {

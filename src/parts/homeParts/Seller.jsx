@@ -1,23 +1,24 @@
 const Seller = () => {
-  return (
-    <div className="w-3/4 m-auto">
-      <div className="mt-20">
-        {data.random((p) => (
-          <div className=" h-[450px]">
-            <div className="h-56 bg-lime-100 flex justify-center items-center">
-              <img src={p.image} alt={p.product_name} className="h-44 w-44" />
-            </div>
+  // return(
+  // <div className="w-3/4 m-auto">
+  //   <div className="mt-20">
+  //     {data.random((p) => (
+  //       <div className=" h-[450px]">
+  //         <div className="h-56 bg-lime-100 flex justify-center items-center">
+  //           <img src={p.image} alt={p.product_name} className="h-44 w-44" />
+  //         </div>
 
-            <div className="flex flex-col justify-center items-center gap-4 p-4">
-              <p>{p.product_name}</p>
-              <p className="text-lime-600 text-xl font-semibold">{p.price}</p>
-              <button className="">Add to cart</button>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+  //         <div className="flex flex-col justify-center items-center gap-4 p-4">
+  //           <p>{p.product_name}</p>
+  //           <p className="text-lime-600 text-xl font-semibold">{p.price}</p>
+  //           <button className="">Add to cart</button>
+  //         </div>
+  //       </div>
+  //     ))}
+  //   </div>
+  // </div>
+  //   );
+  return data[Math.floor(Math.random() * data.length)];
 };
 const data = [
   {

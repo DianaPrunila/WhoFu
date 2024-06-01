@@ -10,8 +10,8 @@ const Slides = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className="w-3/4 m-auto">
-      <div className="mt-20 outline-black">
+    <div className=" slider w-3/4 m-auto mb-8">
+      <div className=" outline-black">
         <Slider {...settings}>
           {preview.map((p) => (
             <div className=" h-[450px] rounded-xl ">
@@ -23,10 +23,11 @@ const Slides = () => {
                 />
               </div>
 
-              <div className="flex flex-col justify-center items-center gap-4 p-4">
+              <div className="flex flex-col justify-center items-center  p-4">
                 <p>{p.product_name}</p>
                 <p className="text-lime-600 text-xl font-semibold">{p.price}</p>
-                <button className="">Add to cart</button>
+                <p>{p.quantity}</p>
+                <button hre>Add to cart</button>
               </div>
             </div>
           ))}
