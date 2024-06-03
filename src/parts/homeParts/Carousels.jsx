@@ -9,7 +9,7 @@ export const Carousel1 = () => {
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <img className="d-block w-100" src={imageOne} height="100%" />
-        <Carousel.Caption>
+        <Carousel.Caption className="bg-indigo-700">
           <h4>Sale 30% off</h4>
           <h3>A Wold Of Natural Flavor</h3>
           <p>Enjoy free delivery with min. purchase of SALESUMMER30</p>

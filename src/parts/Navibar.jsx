@@ -6,6 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { FaRegUser } from "react-icons/fa";
 import { GrFavorite } from "react-icons/gr";
 import { BsCart2 } from "react-icons/bs";
+import { PiHamburgerBold } from "react-icons/pi";
 import "./NaviBar.scss";
 
 function NaviBar() {
@@ -13,10 +14,7 @@ function NaviBar() {
     <Navbar expand="lg" className="bg-green-700 bg-body-tertiary">
       <Container fluid className="w-full">
         <Navbar.Brand href="/">WhoFu</Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="navbarScroll"
-          className="bg-inverse bg-red-600"
-        />
+        <Navbar.Toggle aria-controls="navbarScroll" className=" bg-blue-600" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="my-2 my-lg-0 w-full flex justify-between"

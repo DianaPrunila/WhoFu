@@ -10,11 +10,11 @@ const Slides = () => {
     slidesToScroll: 1,
   };
   return (
-    <div className=" slider w-3/4 m-auto mb-8">
-      <div className=" outline-black">
+    <div className=" slider w-3/4 m-auto mb-8  flex-wrap">
+      <div>
         <Slider {...settings}>
           {preview.map((p) => (
-            <div className=" h-[450px] rounded-xl ">
+            <div className="  h-[450px] rounded-xl ">
               <div className=" bg-lime-100 h-56  flex justify-center items-center rounded-t-xl">
                 <img
                   src={p.image}
