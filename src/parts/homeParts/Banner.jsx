@@ -4,13 +4,9 @@ import banner from "/images/other/banner.png";
 const Banner = () => {
   return (
     <div>
-      <Container className="ban  p-0">
+      <Container className="ban w-11/12 p-0" style={{ height: "280px" }}>
         <figure className="position-relative ">
-          <img
-            src={banner}
-            alt="Banner"
-            className=" ban w-11/12 img-fluid   "
-          />
+          <img src={banner} alt="Banner" className=" ban w-11/12 img-fluid" />
           <figcaption className="center text-3xl font-bold text-center">
             "Organic food is the best medicine for your body"
             <p className="cap text-sm font-normal">EST HABECO CETEROS</p>

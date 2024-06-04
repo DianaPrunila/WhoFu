@@ -1,127 +1,82 @@
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Fermented from "/images/foods/Fermented.jpg";
-import Fruits from "/images/foods/Fruits.jpg";
-import Grains from "/images/foods/Grains.jpg";
-import Legumes from "/images/foods/Legumes.jpg";
-import NutsSeeds from "/images/foods/NutsSeeds.webp";
-import PastaNoodles from "/images/foods/PastaNoodles.jpg";
-import Vegetables from "/images/foods/Vegetables.jpg";
 
 function Categories() {
+  const categWriting = {
+    color: "rgb(10, 71, 46)",
+    fontWeight: "bold",
+    fontSize: "14px",
+    fontFamily: "sans-serif",
+    textAlign: "center",
+  };
+  const categ = [
+    {
+      id: 1,
+      name: "Vegetables",
+      source: "/images/foods/Vegetables.jpg",
+      path: "./Vegetables",
+    },
+    {
+      id: 2,
+      name: "Grains",
+      source: "/images/foods/Grains.jpg",
+      path: "./Grains",
+    },
+    {
+      id: 3,
+      name: "Pasta & Noodles",
+      source: "/images/foods/PastaNoodles.jpg",
+      path: "./Pasta",
+    },
+    {
+      id: 4,
+      name: "Fruits",
+      source: "/images/foods/Fruits.jpg",
+      path: "./Fruits",
+    },
+    {
+      id: 5,
+      name: "Nuts & Seeds",
+      source: "/images/foods/NutsSeeds.webp",
+      path: "./NutsSeeds",
+    },
+    {
+      id: 6,
+      name: "Legumes",
+      source: "/images/foods/Legumes.jpg",
+      path: "./Legumes",
+    },
+    {
+      id: 7,
+      name: "Fermented foods",
+      source: "/images/foods/Fermented.jpg",
+      path: "./Fermented",
+    },
+  ];
   return (
-    <Container className="grid m-24 p-0">
-      <Col className="grid">
-        <Row className="p-0">
-          <a href="./Vegetables">
-            <Container className="p-0">
-              <figure className="position-relative ">
-                <img
-                  src={Vegetables}
-                  alt="Vegetables"
-                  className=" img-categories img-fluid ;"
-                />
-                <figcaption className="center text-white">
-                  Vegetables
-                </figcaption>
-              </figure>
-            </Container>
-          </a>
-        </Row>
-        <Row className="p-0">
-          <a href="./Grains">
-            <Container className="p-0">
-              <figure className="position-relative ">
-                <img
-                  src={Grains}
-                  alt="Grains"
-                  className=" img-categories img-fluid"
-                />
-                <figcaption className="center text-white">Grains</figcaption>
-              </figure>
-            </Container>
-          </a>
-        </Row>
-        <Row className="p-0">
-          <a href="./Pasta">
-            <Container className="p-0">
-              <figure className="position-relative ">
-                <img
-                  src={PastaNoodles}
-                  alt="Pasta & Noodles"
-                  className=" img-categories img-fluid"
-                />
-                <figcaption className="center text-white">
-                  Pasta & Noodles
-                </figcaption>
-              </figure>
-            </Container>
-          </a>
-        </Row>
-      </Col>
-      <Col className="grid">
-        <Row className="p-0">
-          <a href="./Fruits">
-            <Container className="p-0">
-              <figure className="position-relative ">
-                <img
-                  src={Fruits}
-                  alt="Fruit"
-                  className=" img-categories img-fluid"
-                />
-                <figcaption className="center text-white">Fruit</figcaption>
-              </figure>
-            </Container>
-          </a>
-        </Row>
-        <Row className="p-0">
-          <a href="./NutsSeeds">
-            <Container className="p-0">
-              <figure className="position-relative ">
-                <img
-                  src={NutsSeeds}
-                  alt="Nuts & Seeds"
-                  className=" img-categories img-fluid"
-                />
-                <figcaption className="center text-white">
-                  Nuts & Seeds
-                </figcaption>
-              </figure>
-            </Container>
-          </a>
-        </Row>
-        <Row className="p-0">
-          <a href="./Legumes">
-            <Container className="p-0">
-              <figure className="position-relative ">
-                <img
-                  src={Legumes}
-                  alt="Legumes"
-                  className=" img-categories img-fluid"
-                />
-                <figcaption className="center text-white">Legumes</figcaption>
-              </figure>
-            </Container>
-          </a>
-        </Row>
-        <Row className="p-0">
-          <a href="./Fermented">
-            <Container className="p-0">
-              <figure className="position-relative ">
-                <img
-                  src={Fermented}
-                  alt="Fermented"
-                  className=" img-categories img-fluid"
-                />
-                <figcaption className="center text-white">
-                  Fermented foods
-                </figcaption>
-              </figure>
-            </Container>
-          </a>
-        </Row>
-      </Col>
+    <Container className="p-6">
+      <div className="d-flex p-0 flex-wrap justify-center gap-x-8	gap-y-3.5">
+        {categ.map((c) => (
+          <div className="img">
+            <a href={c.path}>
+              <Container className="p-0">
+                <figure className="position-relative ">
+                  <img
+                    src={c.source}
+                    alt={c.name}
+                    className=" img-categories img-fluid ;"
+                  />
+                  <caption
+                    className="bottom-right bg-white p-2 rounded-xl "
+                    style={categWriting}
+                  >
+                    {c.name}
+                  </caption>
+                </figure>
+              </Container>
+            </a>
+          </div>
+        ))}
+      </div>
     </Container>
   );
 }

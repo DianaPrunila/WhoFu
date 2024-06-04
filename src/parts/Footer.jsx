@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <MDBFooter
       bgColor="light"
-      className="text-center text-lg-start text-muted w-full  pt-10 mb-0"
+      className="text-center text-lg-start text-muted w-full  pt-1 mb-0"
     >
       <section className="">
         <MDBContainer className="text-center text-md-start mt-5">
@@ -89,7 +89,7 @@ export default function Footer() {
               </p>
             </MDBCol>
 
-            <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
+            <MDBCol md="4" lg="3" xl="3" className="mx-auto  mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
                 <MDBIcon icon="home" className="me-2" />
