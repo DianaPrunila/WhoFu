@@ -7,6 +7,9 @@ export default {
         coursive: ["Yesteryear", "cursive"],
         boldText: ["Josefin Sans", "sans - serif"],
       },
+      colors: {
+        navBg: "#0a472e",
+      },
     },
   },
   plugins: [require("daisyui")],
