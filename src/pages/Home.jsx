@@ -9,7 +9,9 @@ const Home = () => {
     <>
       <Carousel1 />
       <div>
-        <h3 className="d-flex justify-center mt-5">Top products</h3>
+        <h3 className="d-flex text-4xl  font-bold justify-center mt-5 mb-5">
+          Top products
+        </h3>
       </div>
       <Slides />
       {/* <Seller /> */}

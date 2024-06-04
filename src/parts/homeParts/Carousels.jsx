@@ -9,10 +9,15 @@ export const Carousel1 = () => {
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <img className="d-block w-100" src={imageOne} height="100%" />
-        <Carousel.Caption className="bg-indigo-700">
-          <h4>Sale 30% off</h4>
-          <h3>A Wold Of Natural Flavor</h3>
-          <p>Enjoy free delivery with min. purchase of SALESUMMER30</p>
+        <Carousel.Caption>
+          <h4 className="font-coursive text-4xl">Sale 30% off</h4>
+          <h3 className="font-boldText font- bold text-5xl">
+            A Wold Of Natural Flavor
+          </h3>
+          <p className="text-sm">
+            Enjoy free delivery with min. purchase of{" "}
+            <span className="font-bold">SALESUMMER30</span>
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -23,9 +28,11 @@ export const Carousel1 = () => {
           height="100%"
         />
         <Carousel.Caption>
-          <h4>Season Sale</h4>
-          <h3>Spice Season Returns</h3>
-          <p>From cereal to noodle to the return!</p>
+          <h4 className="font-coursive text-4xl ">Season Sale</h4>
+          <h3 className="font-boldText font- bold text-5xl">
+            Spice Season Returns
+          </h3>
+          <p className="text-sm">From cereal to noodle to the return!</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -36,7 +43,9 @@ export const Carousel1 = () => {
           height="100%"
         />
         <Carousel.Caption>
-          <h3>Subscribe to our newsletter!</h3>
+          <h3 className="font-boldText text-5xl">
+            Subscribe to our newsletter!
+          </h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

@@ -11,84 +11,46 @@ import Vegetables from "/images/foods/Vegetables.jpg";
 
 function Categories() {
   return (
-    <Container className=" grid m-10 p-0">
-      <Row className="grid">
-        <Col className="p-0">
-          <a href="./Fruits">
-            <Container>
-              <figure className="position-relative ">
-                <img src={Fruits} alt="Fruit" className="img-fluid" />
-                <figcaption className="center text-white">Fruit</figcaption>
-              </figure>
-            </Container>
-          </a>
-        </Col>
-        <Col className="p-0">
-          <a href="./NutsSeeds">
-            <Container>
-              <figure className="position-relative ">
-                <img src={NutsSeeds} alt="Nuts & Seeds" className="img-fluid" />
-                <figcaption className="center text-white">
-                  Nuts & Seeds
-                </figcaption>
-              </figure>
-            </Container>
-          </a>
-        </Col>
-        <Col className="p-0">
-          <a href="./Legumes">
-            <Container>
-              <figure className="position-relative ">
-                <img src={Legumes} alt="Legumes" className="img-fluid" />
-                <figcaption className="center text-white">Legumes</figcaption>
-              </figure>
-            </Container>
-          </a>
-        </Col>
-        <Col className="p-0">
-          <a href="./Fermented">
-            <Container>
-              <figure className="position-relative ">
-                <img src={Fermented} alt="Fermented" className="img-fluid" />
-                <figcaption className="center text-white">
-                  Fermented foods
-                </figcaption>
-              </figure>
-            </Container>
-          </a>
-        </Col>
-      </Row>
-      <Row className="grid">
-        <Col className="p-0">
+    <Container className="grid m-24 p-0">
+      <Col className="grid">
+        <Row className="p-0">
           <a href="./Vegetables">
-            <Container>
+            <Container className="p-0">
               <figure className="position-relative ">
-                <img src={Vegetables} alt="Vegetables" className="img-fluid" />
+                <img
+                  src={Vegetables}
+                  alt="Vegetables"
+                  className=" img-categories img-fluid ;"
+                />
                 <figcaption className="center text-white">
                   Vegetables
                 </figcaption>
               </figure>
             </Container>
           </a>
-        </Col>
-        <Col className="p-0">
+        </Row>
+        <Row className="p-0">
           <a href="./Grains">
-            <Container>
+            <Container className="p-0">
               <figure className="position-relative ">
-                <img src={Grains} alt="Grains" className="img-fluid" />
+                <img
+                  src={Grains}
+                  alt="Grains"
+                  className=" img-categories img-fluid"
+                />
                 <figcaption className="center text-white">Grains</figcaption>
               </figure>
             </Container>
           </a>
-        </Col>
-        <Col className="p-0">
+        </Row>
+        <Row className="p-0">
           <a href="./Pasta">
-            <Container>
+            <Container className="p-0">
               <figure className="position-relative ">
                 <img
                   src={PastaNoodles}
                   alt="Pasta & Noodles"
-                  className="img-fluid"
+                  className=" img-categories img-fluid"
                 />
                 <figcaption className="center text-white">
                   Pasta & Noodles
@@ -96,8 +58,70 @@ function Categories() {
               </figure>
             </Container>
           </a>
-        </Col>
-      </Row>
+        </Row>
+      </Col>
+      <Col className="grid">
+        <Row className="p-0">
+          <a href="./Fruits">
+            <Container className="p-0">
+              <figure className="position-relative ">
+                <img
+                  src={Fruits}
+                  alt="Fruit"
+                  className=" img-categories img-fluid"
+                />
+                <figcaption className="center text-white">Fruit</figcaption>
+              </figure>
+            </Container>
+          </a>
+        </Row>
+        <Row className="p-0">
+          <a href="./NutsSeeds">
+            <Container className="p-0">
+              <figure className="position-relative ">
+                <img
+                  src={NutsSeeds}
+                  alt="Nuts & Seeds"
+                  className=" img-categories img-fluid"
+                />
+                <figcaption className="center text-white">
+                  Nuts & Seeds
+                </figcaption>
+              </figure>
+            </Container>
+          </a>
+        </Row>
+        <Row className="p-0">
+          <a href="./Legumes">
+            <Container className="p-0">
+              <figure className="position-relative ">
+                <img
+                  src={Legumes}
+                  alt="Legumes"
+                  className=" img-categories img-fluid"
+                />
+                <figcaption className="center text-white">Legumes</figcaption>
+              </figure>
+            </Container>
+          </a>
+        </Row>
+        <Row className="p-0">
+          <a href="./Fermented">
+            <Container className="p-0">
+              <figure className="position-relative ">
+                <img
+                  src={Fermented}
+                  alt="Fermented"
+                  className=" img-categories img-fluid"
+                />
+                <figcaption className="center text-white">
+                  Fermented foods
+                </figcaption>
+              </figure>
+            </Container>
+          </a>
+        </Row>
+      </Col>
     </Container>
   );
 }

@@ -1,14 +1,18 @@
 @import "mdb-react-ui-kit/dist/css/mdb.min.css";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Yesteryear&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Yesteryear&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   font-family: "Yesteryear", cursive;
   font-weight: 400;
   font-style: normal;
-}
+} */
 .slick-slide > div {
   margin: 0 10px;
 }

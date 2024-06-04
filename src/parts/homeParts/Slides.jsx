@@ -6,20 +6,20 @@ const Slides = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
   };
   return (
-    <div className=" slider w-3/4 m-auto mb-8  flex-wrap">
+    <div className=" slider w-11/12 m-auto mb-8  flex-wrap">
       <div>
         <Slider {...settings}>
           {preview.map((p) => (
-            <div className="  h-[450px] rounded-xl ">
+            <div className="  h-[450px] rounded-xl border-1 border-black">
               <div className=" bg-lime-100 h-56  flex justify-center items-center rounded-t-xl">
                 <img
                   src={p.image}
                   alt={p.product_name}
-                  className="h-44 w-44 rounded-full"
+                  className="h-44 w-44 "
                 />
               </div>
 

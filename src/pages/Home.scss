@@ -1,16 +1,6 @@
 .carousel-caption {
-  // display: flex;
-  // flex-wrap: wrap;
-  // color: #000;
-  // position: absolute;
-  // right: 15%;
-  // bottom: 1.25rem;
-  // left: 15%;
-  // padding-top: 1.25rem;
-  // padding-bottom: 1.25rem;
-  // text-align: center;
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   bottom: 50%;
   transform: translate(-50%, -50%);
@@ -37,4 +27,28 @@
 
 .text-bg {
   background-color: aqua;
+}
+
+.img-categories {
+  border-radius: 30px;
+}
+
+.ban {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  // width: 50%;
+}
+.cap {
+  margin-top: 15px;
+  max-height: 50%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  visibility: hidden;
+}
+
+.slick-list {
+  margin-bottom: 20px;
 }
