@@ -4,7 +4,7 @@ import banner from "/images/other/banner.png";
 const Banner = () => {
   return (
     <div>
-      <Container className="ban w-11/12 p-0" style={{ height: "280px" }}>
+      <Container className="ban w-11/12 p-0 mb-4" style={{ height: "280px" }}>
         <figure className="position-relative ">
           <img src={banner} alt="Banner" className=" ban w-11/12 img-fluid" />
           <figcaption className="center text-3xl font-bold text-center">

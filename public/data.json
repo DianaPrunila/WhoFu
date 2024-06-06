@@ -5,7 +5,7 @@
     "category": "Legumes",
     "price": "2.00 €",
     "quantity": "1 kg",
-    "image": "./images/foods/lentils.png"
+    "image": "./images/foods/lentils.jpg"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "category": "Legumes",
     "price": "2.00 €",
     "quantity": "1 kg",
-    "image": "./images/foods/chickpeas.png"
+    "image": "./images/foods/chickpeas.jpg"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "category": "Legumes",
     "price": "2.00 €",
     "quantity": "1 kg",
-    "image": "./images/foods/beans.png"
+    "image": "./images/foods/beans.jpg"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "category": "Grains",
     "price": "2.00 €",
     "quantity": "1 kg",
-    "image": "./images/foods/oats.png"
+    "image": "./images/foods/oats.jpg"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "category": "Grains",
     "price": "2.00 €",
     "quantity": "1 kg",
-    "image": "./images/foods/bulgur.png"
+    "image": "./images/foods/bulgur.jpg"
   },
   {
     "id": 6,
@@ -53,7 +53,7 @@
     "category": "Vegetables",
     "price": "2.00 €",
     "quantity": "1 kg",
-    "image": "./images/foods/spinach.png"
+    "image": "./images/foods/spinach.jpg"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "category": "Vegetables",
     "price": "2.50 €",
     "quantity": "1 kg",
-    "image": "./images/foods/broccoli.png"
+    "image": "./images/foods/broccoli.jpg"
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "category": "Vegetables",
     "price": "1.00 €",
     "quantity": "1 kg",
-    "image": "./images/foods/carrots.png"
+    "image": "./images/foods/carrots.jpg"
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "category": "Fruits",
     "price": "2.00 €",
     "quantity": "each",
-    "image": "./images/foods/avocado.png"
+    "image": "./images/foods/avocado.jpg"
   },
   {
     "id": 11,
@@ -85,7 +85,7 @@
     "category": "Fruits",
     "price": "3.00 €",
     "quantity": "1 kg",
-    "image": "./images/foods/strawberries.png"
+    "image": "./images/foods/strawberries.jpg"
   },
   {
     "id": 12,
@@ -93,7 +93,7 @@
     "category": "Fruits",
     "price": "5.00 €",
     "quantity": "1 kg",
-    "image": "./images/foods/raspberries.png"
+    "image": "./images/foods/raspberries.jpg"
   },
   {
     "id": 13,
@@ -101,7 +101,7 @@
     "category": "Vegetables",
     "price": "3.19 €",
     "quantity": "1 kg ",
-    "image": "./images/foods/tomato.png"
+    "image": "./images/foods/tomatos.jpg"
   },
   {
     "id": 14,
@@ -109,7 +109,7 @@
     "category": "Fruits",
     "price": "3.50 €",
     "quantity": "1 kg",
-    "image": "./images/foods/cherry.png"
+    "image": "./images/foods/cherry.jpg"
   },
   {
     "id": 15,
@@ -117,7 +117,7 @@
     "category": "Legumes",
     "price": "2.50 €",
     "quantity": "500 g",
-    "image": "./images/foods/edamame.png"
+    "image": "./images/foods/edamame.jpg"
   },
   {
     "id": 16,
@@ -125,7 +125,7 @@
     "category": "Pasta and Noodles",
     "price": "2.00 €",
     "quantity": "500 g",
-    "image": "./images/foods/edamame.png"
+    "image": "./images/foods/edamame.jpg"
   },
   {
     "id": 17,
@@ -141,7 +141,7 @@
     "category": "Pasta and Noodles",
     "price": "3.50 €",
     "quantity": "300 g",
-    "image": "./images/foods/udon.png"
+    "image": "./images/foods/udon.jpg"
   },
   {
     "id": 19,
@@ -149,7 +149,7 @@
     "category": "Fermented Foods",
     "price": "2.50 €",
     "quantity": "500 g",
-    "image": "./images/foods/kimchi.png"
+    "image": "./images/foods/kimchi.jpg"
   },
   {
     "id": 20,
@@ -157,7 +157,7 @@
     "category": "Fermented Foods",
     "price": "2.00 €",
     "quantity": "150 g",
-    "image": "./images/foods/yogurt.png"
+    "image": "./images/foods/yogurt.webp"
   },
   {
     "id": 21,

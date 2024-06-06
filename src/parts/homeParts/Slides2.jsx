@@ -81,44 +81,48 @@ const sliderWriting = {
 };
 const Slides2 = () => {
   return (
-    <div className="w-11/12  m-auto mb-8">
-      <Carousel
-        swipeable={true}
-        draggable={true}
-        infinite={true}
-        responsive={responsive}
-      >
-        {preview.map((p) => (
-          <div className=" ">
-            <div className="d-flex justify-center items-center ">
-              <a href="">
-                <img
-                  src={p.image}
-                  alt={p.product_name}
-                  className="h-44 w-44 d-flex items-center rounded-xl"
-                />
-              </a>
-            </div>
+    <>
+      <h2 className="d-flex justify-center text-bold mb-4 ">TOP PRODUCTS</h2>
+      <div className="w-11/12   m-auto ">
+        <Carousel
+          swipeable={true}
+          draggable={true}
+          infinite={true}
+          responsive={responsive}
+        >
+          {preview.map((p) => (
+            <div className="w-52  mb-4 shadow-lg rounded-xl  ">
+              <div className="d-flex justify-center items-center ">
+                <a href="">
+                  <img
+                    src={p.image}
+                    alt={p.product_name}
+                    className="h-44 w-48 d-flex items-center rounded-xl"
+                  />
+                </a>
+              </div>
 
-            <div className="d-flex flex-col  items-center pt-4 ">
-              <p className="p-0 m-0">{p.product_name}</p>
-              <p className="text-lightGreen text-xl font-semibold p-0 m-0">
-                {p.price}
-              </p>
-              <p className="p-0 m-0">{p.quantity}</p>
-              <a href="./Cart">
-                <button
-                  className=" text-slate-950 hover:text-lightGreen "
-                  style={sliderWriting}
-                >
-                  Add to cart
-                </button>
-              </a>
+              <div className="d-flex flex-col h-40 items-center pt-4 ">
+                <p className="p-0 m-0">{p.product_name}</p>
+                <p className="text-lightGreen text-xl font-semibold p-0 m-0">
+                  {p.price}
+                </p>
+                <p className="p-0 m-0">{p.quantity}</p>
+                <a href="./Cart">
+                  <button
+                    className="bottom-center p-2 rounded-xl bg-slate-50
+                    hover:bg-lightGreen hover:text-white text-navBg active:bg-lightGreen"
+                    style={sliderWriting}
+                  >
+                    Add to cart
+                  </button>
+                </a>
+              </div>
             </div>
-          </div>
-        ))}
-      </Carousel>
-    </div>
+          ))}
+        </Carousel>
+      </div>
+    </>
   );
 };
 

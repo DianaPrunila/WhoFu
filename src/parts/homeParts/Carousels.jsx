@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export const Carousel1 = () => {
   return (
-    <Carousel data-bs-theme="dark">
+    <Carousel className=" mb-4" data-bs-theme="dark">
       <Carousel.Item>
         <img className="d-block w-100" src={imageOne} height="100%" />
         <Carousel.Caption>

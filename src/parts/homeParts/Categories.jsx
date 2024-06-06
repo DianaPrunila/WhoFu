@@ -52,8 +52,11 @@ function Categories() {
     },
   ];
   return (
-    <Container className="p-6">
-      <div className="d-flex p-0 flex-wrap justify-center gap-x-8	gap-y-3.5">
+    <Container className="p-6 mb-4">
+      <div
+        className="d-flex p-0 flex-wrap justify-center gap-x-8	gap-y-3.5"
+        style={{ backGround: "white" }}
+      >
         {categ.map((c) => (
           <div className="img">
             <a href={c.path}>
