@@ -2,7 +2,6 @@ import Container from "react-bootstrap/Container";
 
 function Categories() {
   const categWriting = {
-    color: "rgb(10, 71, 46)",
     fontWeight: "bold",
     fontSize: "14px",
     fontFamily: "sans-serif",
@@ -58,19 +57,20 @@ function Categories() {
         {categ.map((c) => (
           <div className="img">
             <a href={c.path}>
-              <Container className="p-0">
+              <Container className="p-0 ">
                 <figure className="position-relative ">
                   <img
                     src={c.source}
                     alt={c.name}
                     className=" img-categories img-fluid ;"
                   />
-                  <caption
-                    className="bottom-right bg-white p-2 rounded-xl "
+                  <button
+                    className="bottom-right p-2 rounded-xl bg-slate-50
+                    hover:bg-lightGreen hover:text-white text-navBg active:bg-lightGreen"
                     style={categWriting}
                   >
                     {c.name}
-                  </caption>
+                  </button>
                 </figure>
               </Container>
             </a>

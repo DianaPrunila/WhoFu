@@ -9,6 +9,7 @@ export default {
       },
       colors: {
         navBg: "#0a472e",
+        lightGreen: "#80891b",
       },
     },
   },

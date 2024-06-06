@@ -1,6 +1,7 @@
 import { Carousel1 } from "../parts/homeParts/Carousels";
 // import Seller from "../parts/homeParts/Seller";
-import Slides from "../parts/homeParts/Slides";
+// import Slides from "../parts/homeParts/Slides";
+import Slides2 from "../parts/homeParts/Slides2";
 import Banner from "../parts/homeParts/Banner";
 import "./Home.scss";
 import Categories from "../parts/homeParts/Categories";
@@ -13,7 +14,8 @@ const Home = () => {
           Top products
         </h3>
       </div>
-      <Slides />
+      {/* <Slides /> */}
+      <Slides2 />
       {/* <Seller /> */}
       <Categories />
       <Banner />
