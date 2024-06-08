@@ -91,13 +91,13 @@ const Slides2 = () => {
           responsive={responsive}
         >
           {preview.map((p) => (
-            <div className="w-52  mb-4 shadow-lg rounded-xl  ">
-              <div className="d-flex justify-center items-center ">
+            <div className="w-52  mb-4 shadow-md rounded-xl  ">
+              <div className="flex justify-center items-center ">
                 <a href="">
                   <img
                     src={p.image}
                     alt={p.product_name}
-                    className="h-44 w-48 d-flex items-center rounded-xl"
+                    className="h-44 w-48 flex items-center rounded-xl"
                   />
                 </a>
               </div>

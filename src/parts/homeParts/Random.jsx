@@ -16,8 +16,8 @@ const Random = () => {
   const imageP = Card[randomIndex].image;
   return (
     <>
-      <h2 className="d-flex flex-col flex-wrap  mb-4 content-center text-bold">
-        TOP SELLER TODAY
+      <h2 className="flex flex-col flex-wrap  mb-4 content-center text-bold">
+        DEAL OF THE DAY
       </h2>
       <div className=" mb-4 d-flex flex-col flex-wrap  content-center">
         <div className="w-52 shadow-lg rounded-xl ">

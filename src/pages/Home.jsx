@@ -14,7 +14,7 @@ const Home = () => {
       <Slides2 />
       <Random />
       <Categories />
-      <Parallax />
+      <Parallax className="h-4/5" />
       <Banner />
     </>
   );
