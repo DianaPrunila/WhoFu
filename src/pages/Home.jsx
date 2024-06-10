@@ -9,13 +9,15 @@ import Random from "../parts/homeParts/Random";
 const Home = () => {
   return (
     <>
-      <Carousel1 />
-      {/* <Slides /> */}
-      <Slides2 />
-      <Random />
-      <Categories />
-      <Parallax className="h-4/5" />
-      <Banner />
+      <div>
+        <Carousel1 />
+        {/* <Slides /> */}
+        <Slides2 />
+        <Random />
+        <Categories />
+        <Parallax />
+        <Banner />
+      </div>
     </>
   );
 };

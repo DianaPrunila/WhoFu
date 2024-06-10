@@ -2,6 +2,7 @@ import React from "react";
 import TopBanner from "../parts/aboutParts/TopBanner";
 import ACards from "../parts/aboutParts/ACards";
 import Quality from "../parts/aboutParts/Quality";
+import Farmers from "../parts/aboutParts/Farmers";
 
 const About = () => {
   return (
@@ -9,6 +10,7 @@ const About = () => {
       <TopBanner />
       <ACards />
       <Quality />
+      <Farmers />
     </>
   );
 };

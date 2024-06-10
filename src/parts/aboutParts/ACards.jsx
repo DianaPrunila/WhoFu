@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
+
 const ACards = () => {
   const cards = [
     {
@@ -20,21 +20,25 @@ const ACards = () => {
   ];
   return (
     <>
-      <Container className=" mb-4 p-0 ">
+      <div className=" mb-4 p-0  ">
         <div className="flex p-0   ">
           {cards.map((c) => (
-            <Container className="p-0 ">
-              <figure className=" m-2 p-0 ">
-                <img src={c.image} alt={c.title} className="p-0  ;" />
-                <h6 className="text-bold  text-navBg mt-2 mb-2 flex justify-center">
+            <div className="p-0 ">
+              <div className="p-0 ">
+                <img
+                  src={c.image}
+                  alt={c.title}
+                  className="p-0 rounded-md w-80 h-56  ;"
+                />
+                <h6 className="text-bold  text-navBg mt-2 mb-2 flex justify-center ">
                   {c.title}
                 </h6>
-                <p className=" m-1 text-center">{c.text}</p>
-              </figure>
-            </Container>
+                <p className="  text-center">{c.text}</p>
+              </div>
+            </div>
           ))}
         </div>
-      </Container>
+      </div>
     </>
   );
 };
