@@ -3,24 +3,24 @@ import banner from "/images/other/banner.png";
 const Banner = () => {
   return (
     <div
-      className="relative flex w-11/12 
-overflow-hidden justify-center group mb-4"
+      className="relative flex w-11/12
+overflow-hidden group mb-4"
     >
       <img
         src={banner}
         alt=""
         className="transition-transform
-    group-hover:scale-105 duration-200 justify-center"
+    group-hover:scale-105 duration-200 "
       />
       <div
         className="absolute inset-0 flex 
     items-end"
       >
         <div className=" text-navBg flex-1">
-          <h3 className="center text-3xl font-bold text-center">
+          <h3 className="center text-3xl font-bold text-center m-0">
             "Organic food is the best medicine for your body"
           </h3>
-          <p className="flex justify-center  text-sm font-normal">
+          <p className="flex justify-center  text-sm font-normal ">
             EST HABECO CETEROS
           </p>
         </div>

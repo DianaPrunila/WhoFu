@@ -24,14 +24,15 @@ const Farmers = () => {
     },
   ];
   return (
-    <div className="mb-4">
+    <div className="mb-4 ">
       <div className="">
         <p className="text-center text-bold  text-lightGreen ">Our Team</p>
         <h3 className="text-center text-bold  text-navBg mt-2 mb-4">
           We Are The Best Team
         </h3>
       </div>
-      <div className="flex justify-evenly  mb-4">
+
+      <div className="flex justify-evenly mb-4 ">
         {farm.map((f) => (
           <div className="">
             <img src={f.img} alt={f.name} className="w-40 h-72  rounded-md" />

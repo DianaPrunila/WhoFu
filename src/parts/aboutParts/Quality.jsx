@@ -54,35 +54,36 @@ const Quality = () => {
   ];
   return (
     <>
-      <div className="mb-4">
-        <div className=" text-lightGreen  flex flex-col ">
+      <div className="mb-4 w-full ">
+        <div className=" text-lightGreen flex flex-col ">
           <p className=" text- text-bold mb-2 text-center ">Our Products</p>
           <h3 className=" text-navBg mb-2 text-bold text-center">
             Highest Quality
           </h3>
         </div>
-        <div className="flex justify-around ">
-          <div className="left w-[33%]">
+
+        <div className="flex w-[90%] ">
+          <div className="left ">
             {qualiL.map((q) => (
-              <div className="flex items-center w-full">
+              <div className="flex items-center  ">
                 <span
                   style={{ background: `${q.color}` }}
                   className=" rounded-full w-[50px] h-[50px] flex justify-center items-center mr-4"
                 >
                   {q.icon}
                 </span>
-                <div>
+                <div className=" writing w-[60%]">
                   <h6 className="text-bold  text-navBg mt-2 mb-2 flex justify-start ">
                     {q.title}
                   </h6>
-                  <p className="w-[300px]">{q.text}</p>
+                  <p className="">{q.text}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className=" text-center  text-navBg w-[33%] flex justify-center flex-col">
-            <div className="flex justify-center w-full">
+          <div className=" cent  w-[40%] text-navBg  ">
+            <div className=" w-full">
               <img
                 src="/images/other/center-complete.png"
                 className="h-80 w-80"
@@ -91,7 +92,7 @@ const Quality = () => {
             </div>
           </div>
 
-          <div className="left w-[33%]">
+          <div className="right ">
             {qualiR.map((q) => (
               <div className="flex items-center w-full">
                 <span
@@ -100,11 +101,11 @@ const Quality = () => {
                 >
                   {q.icon}
                 </span>
-                <div>
+                <div className="w-[60%]">
                   <h6 className="text-bold  text-navBg mt-2 mb-2 flex justify-start">
                     {q.title}
                   </h6>
-                  <p className="w-[300px]">{q.text}</p>
+                  <p className="">{q.text}</p>
                 </div>
               </div>
             ))}
