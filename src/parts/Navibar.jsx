@@ -11,7 +11,7 @@ function NaviBar() {
   const naviWriting = {
     color: "white",
     fontWeight: "bold",
-    fontSize: "14px",
+    fontSize: "text-sm",
     fontFamily: "sans-serif",
   };
   return (
@@ -54,10 +54,10 @@ function NaviBar() {
               </Form>
 
               <div className="last3Buttons d-flex ">
-                <Nav.Link style={naviWriting} href="/Profile">
+                {/* <Nav.Link style={naviWriting} href="/Profile">
                   <FaRegUser />
-                </Nav.Link>
-                <Nav.Link style={naviWriting} href="Favorites">
+                </Nav.Link> */}
+                <Nav.Link style={naviWriting} href="/AllProducts">
                   <GrFavorite />
                 </Nav.Link>
                 <Nav.Link style={naviWriting} href="Cart">

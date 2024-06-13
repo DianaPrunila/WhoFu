@@ -75,7 +75,7 @@ const preview = [
 ];
 const sliderWriting = {
   fontWeight: "bold",
-  fontSize: "14px",
+  fontSize: "text-sm",
   fontFamily: "sans-serif",
   textAlign: "center",
 };

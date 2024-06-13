@@ -1,9 +1,10 @@
 import Container from "react-bootstrap/Container";
+import { Link } from "react-router-dom";
 
 function Categories() {
   const categWriting = {
     fontWeight: "bold",
-    fontSize: "14px",
+    fontSize: "text-sm",
     fontFamily: "sans-serif",
     textAlign: "center",
   };
@@ -12,43 +13,43 @@ function Categories() {
       id: 1,
       name: "Vegetables",
       source: "/images/foods/Vegetables.jpg",
-      path: "./Vegetables",
+      path: "/Vegetables",
     },
     {
       id: 2,
       name: "Grains",
       source: "/images/foods/Grains.jpg",
-      path: "./Grains",
+      path: "/Grains",
     },
     {
       id: 3,
       name: "Pasta & Noodles",
       source: "/images/foods/PastaNoodles.jpg",
-      path: "./Pasta",
+      path: "/Pasta",
     },
     {
       id: 4,
       name: "Fruits",
       source: "/images/foods/Fruits.jpg",
-      path: "./Fruits",
+      path: "/Fruits",
     },
     {
       id: 5,
       name: "Nuts & Seeds",
       source: "/images/foods/NutsSeeds.webp",
-      path: "./NutsSeeds",
+      path: "/NutsSeeds",
     },
     {
       id: 6,
       name: "Legumes",
       source: "/images/foods/Legumes.jpg",
-      path: "./Legumes",
+      path: "/Legumes",
     },
     {
       id: 7,
       name: "Fermented foods",
       source: "/images/foods/Fermented.jpg",
-      path: "./Fermented",
+      path: "/Fermented",
     },
   ];
   return (
@@ -59,7 +60,7 @@ function Categories() {
       >
         {categ.map((c) => (
           <div className="img">
-            <a href={c.path}>
+            <Link to={c.path}>
               <Container className="p-0 ">
                 <figure className="position-relative ">
                   <img
@@ -76,7 +77,7 @@ function Categories() {
                   </button>
                 </figure>
               </Container>
-            </a>
+            </Link>
           </div>
         ))}
       </div>

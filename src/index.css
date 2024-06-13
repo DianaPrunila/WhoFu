@@ -16,3 +16,7 @@
 .slick-slide > div {
   margin: 0 10px;
 }
+
+.transparentBgIcon:hover {
+  background-color: transparent !important;
+}

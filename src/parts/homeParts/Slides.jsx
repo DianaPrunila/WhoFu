@@ -6,34 +6,38 @@ const Slides = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 2,
     slidesToScroll: 1,
   };
   return (
-    <div className=" slider w-11/12 m-auto mb-8  flex-wrap">
-      <div>
-        <Slider {...settings}>
-          {preview.map((p) => (
-            <div className="  h-[450px] rounded-xl border-1 border-black">
-              <div className=" bg-lime-100 h-56  flex justify-center items-center rounded-t-xl">
-                <img
-                  src={p.image}
-                  alt={p.product_name}
-                  className="h-44 w-44 "
-                />
-              </div>
+    <div className="">
+      <div className=" slider w-5/12 m-auto mb-8  flex-wrap">
+        <div>
+          <Slider {...settings}>
+            {preview.map((p) => (
+              <div className="  h-[450px] rounded-xl border-1 border-black">
+                <div className=" bg-lime-100 h-56  flex justify-center items-center rounded-t-xl">
+                  <img
+                    src={p.image}
+                    alt={p.product_name}
+                    className="h-44 w-44 "
+                  />
+                </div>
 
-              <div className="flex flex-col justify-center items-center  p-4">
-                <p>{p.product_name}</p>
-                <p className="text-lime-600 text-xl font-semibold">{p.price}</p>
-                <p>{p.quantity}</p>
-                <a href="./Cart">
-                  <button>Add to cart</button>
-                </a>
+                <div className="flex flex-col justify-center items-center  p-4">
+                  <p>{p.product_name}</p>
+                  <p className="text-lime-600 text-xl font-semibold">
+                    {p.price}
+                  </p>
+                  <p>{p.quantity}</p>
+                  <a href="./Cart">
+                    <button>Add to cart</button>
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );

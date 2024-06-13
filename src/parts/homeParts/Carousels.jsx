@@ -8,7 +8,11 @@ export const Carousel1 = () => {
   return (
     <Carousel className=" mb-4" data-bs-theme="dark">
       <Carousel.Item>
-        <img className="d-block w-100" src={imageOne} height="100%" />
+        <img
+          className="d-block w-100 opacity-80"
+          src={imageOne}
+          height="100%"
+        />
         <Carousel.Caption>
           <h4 className="font-coursive text-4xl">Sale 30% off</h4>
           <h3 className="font-boldText font- bold text-5xl">
@@ -22,7 +26,7 @@ export const Carousel1 = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 opacity-80"
           src={imageTwo}
           alt="Second slide"
           height="100%"
@@ -37,7 +41,7 @@ export const Carousel1 = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="d-block w-100 opacity-80"
           src={imageThree}
           alt="Third slide"
           height="100%"

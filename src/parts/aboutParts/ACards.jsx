@@ -21,19 +21,19 @@ const ACards = () => {
   return (
     <>
       <div className=" mb-4 p-0 flex justify-center  ">
-        <div className="flex p-0 w-11/12 ">
+        <div className="flex p-0 w-11/12 justify-center gap-x-16 ">
           {cards.map((c) => (
             <div className="p-0 ">
               <div className="p-0 h">
                 <img
                   src={c.image}
                   alt={c.title}
-                  className="p-0  hover:animate-bounce rounded-md w-80 h-56 mb-3 ;"
+                  className="p-0   rounded-md w-80 h-56 mb-3 ;"
                 />
                 <h6 className="text-bold  text-navBg mt-2 mb-2 flex justify-center ">
                   {c.title}
                 </h6>
-                <p className="  text-center">{c.text}</p>
+                <p className="  w-80 text-center">{c.text}</p>
               </div>
             </div>
           ))}
