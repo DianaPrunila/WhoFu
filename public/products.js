@@ -125,7 +125,7 @@ export const PRODUCTS = [
     category: "Pasta and Noodles",
     price: "2.00 €",
     quantity: "500 g",
-    image: "./images/foods/edamame.jpg",
+    image: "./images/foods/pasta.jpg",
   },
   {
     id: 17,
