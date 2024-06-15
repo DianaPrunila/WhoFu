@@ -11,7 +11,7 @@ const Parallax = () => {
   return (
     <>
       <div className=" bg-fixed bg-cover h-96 w-full mb-6 bg-[url(./images/other/parallax.jpg)]">
-        <div className="flex relative justify-end items-center mr-24">
+        <div className="flex  relative justify-end items-center mr-24">
           <img
             src="./images/other/circle.png"
             alt="NANA"

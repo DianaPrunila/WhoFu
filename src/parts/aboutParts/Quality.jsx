@@ -61,8 +61,8 @@ const Quality = () => {
             Highest Quality
           </h3>
         </div>
-        {/* cum centrez? */}
-        <div className="flex justify-center ">
+
+        <div className="parent flex justify-end w-11/12 max-md:flex-wrap">
           <div className="left w-[30%] ">
             {qualiL.map((q) => (
               <div className="flex items-center  ">
@@ -72,7 +72,6 @@ const Quality = () => {
                   }}
                   className=" transparentBgIcon rounded-full w-[50px] h-[50px] flex justify-center items-center mr-4   "
                 >
-                  {/* {q.icon} */}
                   {q.icon}
                 </span>
                 <div className=" writing  colorIcon">
@@ -85,7 +84,7 @@ const Quality = () => {
             ))}
           </div>
           {/* how hide <1200px */}
-          <div className=" cent  w-[25%] text-navBg  ">
+          <div className=" cent   w-[25%] text-navBg max-sm:hidden ">
             <div className=" w-full">
               <img
                 src="/images/other/center-complete.png"

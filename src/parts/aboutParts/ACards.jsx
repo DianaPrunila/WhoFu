@@ -20,8 +20,8 @@ const ACards = () => {
   ];
   return (
     <>
-      <div className=" mb-4 p-0 flex justify-center  ">
-        <div className="flex p-0 w-11/12 justify-center gap-x-16 ">
+      <div className=" mb-4 p-0 flex justify-center flex-wrap ">
+        <div className="flex p-0  justify-center gap-x-16 ">
           {cards.map((c) => (
             <div className="p-0 ">
               <div className="p-0 h">

@@ -18,11 +18,8 @@ const Banner = () => {
     items-end"
         >
           <div className=" text-navBg flex-1">
-            <h3 className="center text-3xl font-bold text-center m-0">
+            <p className="center sm:text-xs md:text-lg lg:text-5xl font-bold text-center m-0">
               "Organic food is the best medicine for your body"
-            </h3>
-            <p className="flex justify-center  text-sm font-normal ">
-              EST HABECO CETEROS
             </p>
           </div>
         </div>

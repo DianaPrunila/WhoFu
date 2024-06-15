@@ -13,14 +13,16 @@ export const Carousel1 = () => {
           src={imageOne}
           height="100%"
         />
-        <Carousel.Caption>
-          <h4 className="font-coursive text-4xl">Sale 30% off</h4>
-          <h3 className="font-boldText font- bold text-5xl">
+        <Carousel.Caption className="sm:align-top sm:leading-3 md:align-top">
+          <p className="font-coursive sm:text-lg md:text-2xl lg:text-5xl">
+            Sale 30% off
+          </p>
+          <p className=" font-bold sm:text-lg md:text-2xl lg:text-5xl">
             A Wold Of Natural Flavor
-          </h3>
+          </p>
           <p className="text-sm">
-            Enjoy free delivery with min. purchase of{" "}
-            <span className="font-bold">SALESUMMER30</span>
+            Enjoy free delivery with min. purchase of
+            <span className="font-bold"> SALESUMMER30</span>
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -32,10 +34,12 @@ export const Carousel1 = () => {
           height="100%"
         />
         <Carousel.Caption>
-          <h4 className="font-coursive text-4xl ">Season Sale</h4>
-          <h3 className="font-boldText font- bold text-5xl">
+          <p className="font-coursive sm:text-lg md:text-2xl lg:text-5xl ">
+            Season Sale
+          </p>
+          <p className="font-bold sm:text-lg md:text-2xl lg:text-5xl">
             Spice Season Returns
-          </h3>
+          </p>
           <p className="text-sm">From cereal to noodle to the return!</p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -47,9 +51,9 @@ export const Carousel1 = () => {
           height="100%"
         />
         <Carousel.Caption>
-          <h3 className="font-boldText text-5xl">
+          <p className="font-bold sm:text-lg md:text-2xl lg:text-5xl">
             Subscribe to our newsletter!
-          </h3>
+          </p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
