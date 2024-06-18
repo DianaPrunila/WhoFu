@@ -83,7 +83,7 @@ const Quality = () => {
               </div>
             ))}
           </div>
-          {/* how hide <1200px */}
+
           <div className=" cent   w-[25%] text-navBg max-sm:hidden ">
             <div className=" w-full">
               <img

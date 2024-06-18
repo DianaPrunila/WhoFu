@@ -2,9 +2,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import banner from "/images/other/banner.png";
 const Banner = () => {
   return (
-    <div className=" flex justify-center w-full">
+    <div className=" flex justify-center   w-full">
       <div
-        className="relative w-11/12 flex justify-center
+        className="relative w-11/12 overflow-hidden flex justify-center
  group mb-4"
       >
         <img
