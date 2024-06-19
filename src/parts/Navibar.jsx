@@ -1,19 +1,20 @@
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { FaRegUser } from "react-icons/fa";
 import { GrFavorite } from "react-icons/gr";
 import { BsCart2 } from "react-icons/bs";
+import { useSelector } from "react-redux";
 
 function NaviBar() {
+  const cart = useSelector((store) => store.cart);
   const naviWriting = {
     color: "white",
     fontWeight: "bold",
     fontSize: "text-sm",
     fontFamily: "sans-serif",
   };
+
   return (
     <Navbar expand="lg" className="bg-navBg">
       <Container fluid className="w-full">
@@ -63,6 +64,9 @@ function NaviBar() {
                 <Nav.Link style={naviWriting} href="Cart">
                   <BsCart2 />
                 </Nav.Link>
+                <span style={naviWriting} className="p-2">
+                  {cart.totalQuantity}
+                </span>
               </div>
             </div>
           </Nav>

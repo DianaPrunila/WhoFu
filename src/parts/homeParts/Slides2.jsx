@@ -93,7 +93,7 @@ const Slides2 = () => {
           className=""
         >
           {preview.map((p) => (
-            <div className="w-52  mb-4 shadow-md rounded-xl  ">
+            <div key={p.id} className="w-52  mb-4 shadow-md rounded-xl  ">
               <div className="flex justify-center items-center ">
                 <img
                   src={p.image}

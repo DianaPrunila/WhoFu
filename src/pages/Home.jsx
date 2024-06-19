@@ -1,6 +1,6 @@
 import { Carousel1 } from "../parts/homeParts/Carousels";
 import Parallax from "../parts/homeParts/Parallax";
-// import Slides from "../parts/homeParts/Slides";
+
 import Slides2 from "../parts/homeParts/Slides2";
 import Banner from "../parts/homeParts/Banner";
 import "./Home.scss";
@@ -11,7 +11,6 @@ const Home = () => {
     <>
       <div>
         <Carousel1 />
-        {/* <Slides /> */}
         <Slides2 />
         <Random />
         <Categories />

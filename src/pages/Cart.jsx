@@ -1,28 +1,15 @@
-import { useContext } from "react";
 import limes from "/images/other/limes.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { PRODUCTS } from "../../public/products";
-import { ShopContext } from "./context/ShopContext";
+// import { PRODUCTS } from "../../public/products";
 import { CartItem } from "./CartItem";
 import { Link, useNavigate } from "react-router-dom";
 
-import {
-  MDBBtn,
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
-  MDBCol,
-  MDBContainer,
-  MDBIcon,
-  MDBInput,
-  MDBRow,
-  MDBTypography,
-} from "mdb-react-ui-kit";
+import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
+import { useSelector } from "react-redux";
 
 export const Cart = () => {
-  const { cartItems, getTotalCartAmount, checkout } = useContext(ShopContext);
-  const totalAmount = getTotalCartAmount();
-
+  const products = useSelector((store) => store.cart.products);
+  console.log(JSON.stringify(products));
   const navigate = useNavigate();
 
   return (
@@ -41,16 +28,15 @@ export const Cart = () => {
             <MDBCol md="10">
               <div>
                 <div>
-                  {PRODUCTS.map((p) => (
-                    <CartItem data={p} />
-                  ))}
+                  {products &&
+                    products.map((p) => <CartItem data={p} key={p.id} />)}
                 </div>
               </div>
 
               {/* {totalAmount > 0 ? ( */}
               <div className=" price flex justify-center text-bold ">
                 <p className="text-3xl">Total price: </p>
-                <p className="text-lightGreen text-3xl">{totalAmount} €</p>
+                <p className="text-lightGreen text-3xl">0 €</p>
               </div>
               <Link to="/CheckOut" className="no-underline">
                 <div className="flex justify-center mt-4">

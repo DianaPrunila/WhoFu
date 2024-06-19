@@ -65,7 +65,7 @@ const Quality = () => {
         <div className="parent flex  justify-center max-md:flex-wrap">
           <div className="left w-[25%] ">
             {qualiL.map((q) => (
-              <div className="flex items-center  ">
+              <div key={q.id} className="flex items-center  ">
                 <span
                   style={{
                     background: `${q.color}`,
@@ -96,7 +96,7 @@ const Quality = () => {
 
           <div className="right w-[25%]">
             {qualiR.map((q) => (
-              <div className="flex items-center  ">
+              <div key={q.id} className="flex items-center  ">
                 <span
                   style={{
                     background: `${q.color}`,

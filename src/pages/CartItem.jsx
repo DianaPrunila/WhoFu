@@ -1,30 +1,18 @@
-import React, { useContext, useState } from "react";
-import { ShopContext } from "./context/ShopContext";
+import { useState } from "react";
 import {
   MDBBtn,
   MDBCard,
   MDBCardBody,
   MDBCardImage,
   MDBCol,
-  MDBContainer,
   MDBIcon,
   MDBInput,
   MDBRow,
   MDBTypography,
 } from "mdb-react-ui-kit";
 
-export const CartItem = (props) => {
-  const { id, product_name, price, image } = props.data;
-  const {
-    cartItems,
-    addToCart,
-    removeFromCart,
-    updateCartItemCount,
-    getTotalCartAmount,
-    checkout,
-  } = useContext(ShopContext);
-  const totalAmount = getTotalCartAmount();
-  const cartItemAmount = cartItems[id];
+export const CartItem = (prop) => {
+  const { id, product_name, price, image } = prop.data;
   const [value, setValue] = useState("");
 
   return (
@@ -51,36 +39,23 @@ export const CartItem = (props) => {
             xl="2"
             className="d-flex align-items-center justify-content-around"
           >
-            <MDBBtn
-              color="link"
-              className="px-2 "
-              onClick={() => {
-                removeFromCart();
-              }}
-            >
+            <MDBBtn color="link" className="px-2 ">
               <MDBIcon fas icon="minus" />
             </MDBBtn>
 
             <MDBInput
               min={0}
               type="number"
-              value={cartItemAmount}
               onChange={(e) => setValue(e.target.value)}
             />
             {/* {cartItemAmount > 0 && <> ({cartItemAmount})</>} */}
-            <MDBBtn
-              color="link"
-              className="px-2 "
-              onClick={() => {
-                addToCart();
-              }}
-            >
+            <MDBBtn color="link" className="px-2 ">
               <MDBIcon icon="plus" />
             </MDBBtn>
           </MDBCol>
           <MDBCol md="3" lg="2" xl="2" className="offset-lg-1">
             <MDBTypography tag="h5" className="mb-0">
-              {totalAmount}
+              0
             </MDBTypography>
           </MDBCol>
           <MDBCol md="1" lg="1" xl="1" className="text-end">

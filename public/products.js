@@ -5,6 +5,7 @@ export const PRODUCTS = [
     category: "Legumes",
     price: "2.00",
     quantity: "1 kg",
+    quantityToBuy: 0,
     image: "./images/foods/lentils.jpg",
   },
   {
@@ -13,6 +14,7 @@ export const PRODUCTS = [
     category: "Legumes",
     price: "2.00",
     quantity: "1 kg",
+    quantityToBuy: 0,
     image: "./images/foods/chickpeas.jpg",
   },
   {
@@ -21,6 +23,7 @@ export const PRODUCTS = [
     category: "Legumes",
     price: "2.00",
     quantity: "1 kg",
+    quantityToBuy: 0,
     image: "./images/foods/beans.jpg",
   },
   {
@@ -29,6 +32,7 @@ export const PRODUCTS = [
     category: "Grains",
     price: "2.00",
     quantity: "1 kg",
+    quantityToBuy: 0,
     image: "./images/foods/oats.jpg",
   },
   {
@@ -37,6 +41,7 @@ export const PRODUCTS = [
     category: "Grains",
     price: "2.00",
     quantity: "1 kg",
+    quantityToBuy: 0,
     image: "./images/foods/bulgur.jpg",
   },
   {
@@ -45,6 +50,7 @@ export const PRODUCTS = [
     category: "Grains",
     price: "5.00",
     quantity: "1 kg",
+    quantityToBuy: 0,
     image: "./images/foods/quinoa.jpg",
   },
   {
@@ -53,6 +59,7 @@ export const PRODUCTS = [
     category: "Vegetables",
     price: "2.00",
     quantity: "1 kg",
+    quantityToBuy: 0,
     image: "./images/foods/spinach.jpg",
   },
   {
@@ -61,6 +68,7 @@ export const PRODUCTS = [
     category: "Vegetables",
     price: "2.50",
     quantity: "1 kg",
+    quantityToBuy: 0,
     image: "./images/foods/broccoli.jpg",
   },
   {
@@ -69,6 +77,7 @@ export const PRODUCTS = [
     category: "Vegetables",
     price: "1.00",
     quantity: "1 kg",
+    quantityToBuy: 0,
     image: "./images/foods/carrots.jpg",
   },
   {
@@ -77,6 +86,7 @@ export const PRODUCTS = [
     category: "Fruits",
     price: "2.00",
     quantity: "each",
+    quantityToBuy: 0,
     image: "./images/foods/avocado.jpg",
   },
   {
@@ -85,6 +95,7 @@ export const PRODUCTS = [
     category: "Fruits",
     price: "3.00",
     quantity: "1 kg",
+    quantityToBuy: 0,
     image: "./images/foods/strawberries.jpg",
   },
   {
@@ -93,6 +104,7 @@ export const PRODUCTS = [
     category: "Fruits",
     price: "5.00",
     quantity: "1 kg",
+    quantityToBuy: 0,
     image: "./images/foods/raspberries.jpg",
   },
   {
@@ -101,6 +113,7 @@ export const PRODUCTS = [
     category: "Vegetables",
     price: "3.19",
     quantity: "1 kg ",
+    quantityToBuy: 0,
     image: "./images/foods/tomatos.jpg",
   },
   {
@@ -109,6 +122,7 @@ export const PRODUCTS = [
     category: "Fruits",
     price: "3.50",
     quantity: "1 kg",
+    quantityToBuy: 0,
     image: "./images/foods/cherry.jpg",
   },
   {
@@ -117,6 +131,7 @@ export const PRODUCTS = [
     category: "Legumes",
     price: "2.50",
     quantity: "500 g",
+    quantityToBuy: 0,
     image: "./images/foods/edamame.jpg",
   },
   {
@@ -125,6 +140,7 @@ export const PRODUCTS = [
     category: "Pasta and Noodles",
     price: "2.00",
     quantity: "500 g",
+    quantityToBuy: 0,
     image: "./images/foods/pasta.jpg",
   },
   {
@@ -133,6 +149,7 @@ export const PRODUCTS = [
     category: "Pasta and Noodles",
     price: "3.00",
     quantity: "300 g",
+    quantityToBuy: 0,
     image: "./images/foods/soba.jpg",
   },
   {
@@ -141,6 +158,7 @@ export const PRODUCTS = [
     category: "Pasta and Noodles",
     price: "3.50",
     quantity: "300 g",
+    quantityToBuy: 0,
     image: "./images/foods/udon.jpg",
   },
   {
@@ -149,6 +167,7 @@ export const PRODUCTS = [
     category: "Fermented Foods",
     price: "2.50",
     quantity: "500 g",
+    quantityToBuy: 0,
     image: "./images/foods/kimchi.jpg",
   },
   {
@@ -157,6 +176,7 @@ export const PRODUCTS = [
     category: "Fermented Foods",
     price: "2.00",
     quantity: "150 g",
+    quantityToBuy: 0,
     image: "./images/foods/yogurt.webp",
   },
   {
@@ -165,6 +185,7 @@ export const PRODUCTS = [
     category: "Fermented Foods",
     price: "4.00",
     quantity: "200 g",
+    quantityToBuy: 0,
     image: "./images/foods/miso.jpg",
   },
 ];
