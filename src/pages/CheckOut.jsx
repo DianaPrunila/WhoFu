@@ -1,12 +1,5 @@
-import React from "react";
 import limes from "/images/other/limes.png";
-import {
-  MDBRow,
-  MDBCol,
-  MDBInput,
-  MDBCheckbox,
-  MDBBtn,
-} from "mdb-react-ui-kit";
+import { MDBRow, MDBCol, MDBInput } from "mdb-react-ui-kit";
 
 const CheckOut = () => {
   return (

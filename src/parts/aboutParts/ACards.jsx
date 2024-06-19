@@ -1,5 +1,3 @@
-import React from "react";
-
 const ACards = () => {
   const cards = [
     {
@@ -23,7 +21,7 @@ const ACards = () => {
       <div className=" mb-4 p-0 flex justify-center flex-wrap ">
         <div className="flex p-0  justify-center gap-x-16 ">
           {cards.map((c) => (
-            <div className="p-0 ">
+            <div key={c.id} className="p-0 ">
               <div className="p-0 h">
                 <img
                   src={c.image}

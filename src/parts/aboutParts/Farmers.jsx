@@ -1,5 +1,3 @@
-import React from "react";
-
 const Farmers = () => {
   const farm = [
     {
@@ -34,7 +32,7 @@ const Farmers = () => {
 
       <div className="flex justify-evenly mb-4 ">
         {farm.map((f) => (
-          <div className="">
+          <div key={f.id} className="">
             <img src={f.img} alt={f.name} className="w-40 h-72  rounded-md" />
             <p className="mt-2 mb-0 text-center text-bold">{f.name}</p>
             <p className="text-center mb-0">{f.job}</p>
