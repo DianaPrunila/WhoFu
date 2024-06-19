@@ -86,20 +86,3 @@ const Contact = () => {
 };
 
 export default Contact;
-// <Form>
-// <Form.Group
-//   className="mb-3"
-//   controlId="exampleForm.ControlInput1"
-// >
-//   <Form.Control type="text" placeholder="Your Name" />
-//   <Form.Control type="email" placeholder="Email" />
-//   <Form.Control type="text" placeholder="Subject" />
-
-//   <Form.Control
-//     className="mb-3"
-//     as="textarea"
-//     rows={3}
-//     placeholder="Message"
-//   />
-// </Form.Group>
-// </Form>

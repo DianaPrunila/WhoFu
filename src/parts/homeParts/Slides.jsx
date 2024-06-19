@@ -15,7 +15,10 @@ const Slides = () => {
         <div>
           <Slider {...settings}>
             {preview.map((p) => (
-              <div className="  h-[450px] rounded-xl border-1 border-black">
+              <div
+                key={p.id}
+                className="  h-[450px] rounded-xl border-1 border-black"
+              >
                 <div className=" bg-lime-100 h-56  flex justify-center items-center rounded-t-xl">
                   <img
                     src={p.image}

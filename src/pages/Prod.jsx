@@ -1,18 +1,27 @@
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import { ShopContext } from "./context/ShopContext.jsx";
-import { useContext } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { add, calculateTotals } from "../store/cartSlice";
+import { useState } from "react";
 
 export const Prod = (prop) => {
-  const { id, product_name, price, image } = prop.data;
-  const { addToCart, cartItems } = useContext(ShopContext);
+  const { product_name, price, image } = prop.data;
+  const dispatch = useDispatch();
+  // const [initValue, setInitValue] = useState(0);
+  // const { products } = useSelector((store) => store.cart);
 
-  const cartItemAmount = cartItems[id];
+  const dispachAndFilter = (data) => {
+    dispatch(add(data));
+    dispatch(calculateTotals());
+  };
 
   return (
     <div className="product ">
       <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={image} />
+        <Card.Img
+          variant="top"
+          src={image}
+          className="h-[300px] object-cover"
+        />
         <Card.Body className=" ">
           <Card.Title className="flex justify-center">
             {product_name}
@@ -21,9 +30,9 @@ export const Prod = (prop) => {
           <button
             className="addToCartBttn p-2 rounded-xl  flex justify-center
                     hover:bg-lightGreen hover:text-white text-navBg active:bg-lightGreen text-bold"
-            onClick={() => addToCart(id)}
+            onClick={() => dispachAndFilter(prop.data)}
           >
-            Add To Cart {cartItemAmount > 0 && <> ({cartItemAmount})</>}
+            Add To Cart
           </button>
         </Card.Body>
       </Card>
