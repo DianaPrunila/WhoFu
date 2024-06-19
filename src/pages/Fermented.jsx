@@ -18,7 +18,7 @@ const Fermented = () => {
         <h1 className="flex justify-center my-5">Fermented</h1>
       </div>
 
-      <div className="products flex flex-wrap justify-center w-11/12 gap-x-9 gap-y-8">
+      <div className="products flex flex-wrap justify-center  gap-x-9 gap-y-8">
         {fermented && fermented.map((f, i) => <Prod data={f} key={i} />)}
       </div>
     </div>

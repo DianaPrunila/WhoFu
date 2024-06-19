@@ -102,7 +102,7 @@ const Slides2 = () => {
                 />
               </div>
 
-              <div className="d-flex flex-col h-44 items-center pt-4 ">
+              <div className="flex flex-col h-44 items-center pt-4 ">
                 <p className="p-0 m-0">{p.product_name}</p>
                 <p className="text-lightGreen text-xl font-semibold p-0 m-0">
                   {p.price}
