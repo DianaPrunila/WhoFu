@@ -55,7 +55,7 @@ function Categories() {
   return (
     <Container className="p-6 mb-4">
       <div
-        className="d-flex p-0 flex-wrap justify-center  gap-x-8	gap-y-3.5"
+        className="d-flex p-0 flex-wrap justify-center  gap-x-16	gap-y-4"
         style={{ backGround: "white" }}
       >
         {categ.map((c) => (

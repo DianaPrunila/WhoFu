@@ -62,8 +62,8 @@ const Quality = () => {
           </h3>
         </div>
 
-        <div className="parent flex justify-end w-11/12 max-md:flex-wrap">
-          <div className="left w-[30%] ">
+        <div className="parent flex  justify-center max-md:flex-wrap">
+          <div className="left w-[25%] ">
             {qualiL.map((q) => (
               <div className="flex items-center  ">
                 <span
@@ -84,7 +84,7 @@ const Quality = () => {
             ))}
           </div>
 
-          <div className=" cent   w-[25%] text-navBg max-sm:hidden ">
+          <div className=" cent   w-[22%] text-navBg max-sm:hidden ">
             <div className=" w-full">
               <img
                 src="/images/other/center-complete.png"
@@ -94,7 +94,7 @@ const Quality = () => {
             </div>
           </div>
 
-          <div className="right w-[30%]">
+          <div className="right w-[25%]">
             {qualiR.map((q) => (
               <div className="flex items-center  ">
                 <span

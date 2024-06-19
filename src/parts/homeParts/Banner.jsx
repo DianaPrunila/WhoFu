@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className=" flex justify-center   w-full">
       <div
-        className="relative w-11/12 overflow-hidden flex justify-center
+        className="relative w-10/12 overflow-hidden flex justify-center
  group mb-4"
       >
         <img
@@ -19,7 +19,7 @@ const Banner = () => {
         >
           <div className=" text-navBg flex-1">
             <p className="center sm:text-xs md:text-lg lg:text-5xl font-bold text-center m-0">
-              "Organic food is the best medicine for your body"
+              Organic food is the best medicine for your body
             </p>
           </div>
         </div>

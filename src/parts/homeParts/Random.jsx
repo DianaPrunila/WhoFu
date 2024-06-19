@@ -22,16 +22,14 @@ const Random = () => {
       <div className=" mb-4 d-flex flex-col flex-wrap  content-center">
         <div className="w-52 shadow-lg rounded-xl ">
           <div className="d-flex justify-center items-center ">
-            <a href="">
-              <img
-                src={imageP}
-                alt={nameP}
-                className="h-44 w-48 d-flex items-center rounded-xl"
-              />
-            </a>
+            <img
+              src={imageP}
+              alt={nameP}
+              className="h-44 object-cover d-flex items-center rounded-xl mt-2"
+            />
           </div>
 
-          <div className="d-flex flex-col h-40 items-center pt-4 ">
+          <div className="d-flex flex-col h-40 items-center pt-4 mb-2">
             <p className="p-0 m-0">{nameP}</p>
             <p className="text-lightGreen text-xl font-semibold p-0 m-0">
               {priceP}
@@ -39,8 +37,8 @@ const Random = () => {
             <p className="p-0 m-0">{quantityP}</p>
             <a href="./Cart">
               <button
-                className="bottom-center p-2 rounded-xl bg-slate-50
-                    hover:bg-lightGreen hover:text-white text-navBg active:bg-lightGreen"
+                className="bottom-center p-2 rounded-xl mt-2 bg-lightGreen
+                    hover:bg-navBg text-white  active:bg-lightGreen text-bold "
                 style={randomWriting}
               >
                 Add to cart

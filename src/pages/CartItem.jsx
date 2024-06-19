@@ -33,7 +33,7 @@ export const CartItem = (props) => {
         <MDBRow className="justify-content-between align-items-center">
           <MDBCol md="2" lg="2" xl="2">
             <MDBCardImage
-              className="rounded-3"
+              className="rounded-3 "
               fluid
               src={image}
               alt={product_name}

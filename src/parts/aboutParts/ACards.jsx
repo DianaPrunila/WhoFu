@@ -28,7 +28,7 @@ const ACards = () => {
                 <img
                   src={c.image}
                   alt={c.title}
-                  className="p-0   rounded-md w-80 h-56 mb-3 ;"
+                  className="p-0   rounded-md h-48   object-contain mb-3 ;"
                 />
                 <h6 className="text-bold  text-navBg mt-2 mb-2 flex justify-center ">
                   {c.title}

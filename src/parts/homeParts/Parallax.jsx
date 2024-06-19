@@ -18,7 +18,7 @@ const Parallax = () => {
             className=" h-72 w-72 mt-16 "
           />
 
-          <p className="flex flex-wrap w-48 absolute text-center top-[40%] right-[50px]">
+          <p className="flex flex-wrap w-48 absolute text-center top-[40%] right-[50px] text-bold">
             Find WhoFu organic store in thousands of grocery stores nationwide.
           </p>
           <Link

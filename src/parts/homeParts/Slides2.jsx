@@ -1,3 +1,4 @@
+import { Link } from "phosphor-react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -81,37 +82,36 @@ const sliderWriting = {
 };
 const Slides2 = () => {
   return (
-    <>
+    <div className="slides2 ">
       <h2 className="d-flex justify-center text-bold mb-4 ">TOP PRODUCTS</h2>
-      <div className="w-11/12   m-auto ">
+      <div className="  mx-32 ">
         <Carousel
           swipeable={true}
           draggable={true}
           infinite={true}
           responsive={responsive}
+          className=""
         >
           {preview.map((p) => (
             <div className="w-52  mb-4 shadow-md rounded-xl  ">
               <div className="flex justify-center items-center ">
-                <a href="">
-                  <img
-                    src={p.image}
-                    alt={p.product_name}
-                    className="h-44 w-48 flex items-center rounded-xl"
-                  />
-                </a>
+                <img
+                  src={p.image}
+                  alt={p.product_name}
+                  className="h-44 object-cover flex items-center rounded-xl mt-2"
+                />
               </div>
 
-              <div className="d-flex flex-col h-40 items-center pt-4 ">
+              <div className="d-flex flex-col h-44 items-center pt-4 ">
                 <p className="p-0 m-0">{p.product_name}</p>
                 <p className="text-lightGreen text-xl font-semibold p-0 m-0">
                   {p.price}
                 </p>
                 <p className="p-0 m-0">{p.quantity}</p>
-                <a href="./Cart">
+                <a href="/Cart">
                   <button
-                    className="bottom-center p-2 rounded-xl bg-slate-50
-                    hover:bg-lightGreen hover:text-white text-navBg active:bg-lightGreen"
+                    className="bottom-center mt-3 p-2 rounded-xl  bg-lightGreen
+                    hover:bg-navBg text-white  active:bg-lightGreen text-bold"
                     style={sliderWriting}
                   >
                     Add to cart
@@ -122,7 +122,7 @@ const Slides2 = () => {
           ))}
         </Carousel>
       </div>
-    </>
+    </div>
   );
 };
 
