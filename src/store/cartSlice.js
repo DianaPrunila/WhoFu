@@ -10,10 +10,32 @@ const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
+    // addToCart(state, action) {
+    //   const { productId, quantity, prod } = action.payload;
+    //   const indexProductId = state.items.findIndex(
+    //     (item) => item.productId === productId
+    //   );
+    //   if (indexProductId >= 0) {
+    //     state.items[indexProductId].quantity += quantity;
+    //   } else {
+    //     state.items.push({ productId, quantity, prod });
+    //   }
+
     add: (state, { payload }) => {
       const prod = { ...payload, quantityToBuy: 1 };
-      state.products = [...state.products, prod];
-      console.log(state.products);
+      // const findProd = state.products.find((p) => p.id === payload.id);
+
+      const indexProductId = state.products.findIndex(
+        (p) => p.id === payload.id
+      );
+      if (indexProductId >= 0) {
+        state.products[indexProductId].quantityToBuy += 1;
+      } else {
+        state.products = [...state.products, prod];
+      }
+
+      // state.products = [...state.products, prod];
+      // console.log(state.products);
     },
     clearCart: (state) => {
       state.products = [];

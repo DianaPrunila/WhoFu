@@ -58,9 +58,9 @@ function NaviBar() {
                 {/* <Nav.Link style={naviWriting} href="/Profile">
                   <FaRegUser />
                 </Nav.Link> */}
-                <Nav.Link style={naviWriting} href="/AllProducts">
+                {/* <Nav.Link style={naviWriting} href="/AllProducts">
                   <GrFavorite />
-                </Nav.Link>
+                </Nav.Link> */}
                 <Nav.Link style={naviWriting} href="Cart">
                   <BsCart2 />
                 </Nav.Link>

@@ -2,16 +2,15 @@ import limes from "/images/other/limes.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import { PRODUCTS } from "../../public/products";
 import { CartItem } from "./CartItem";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
 import { useSelector } from "react-redux";
 
 export const Cart = () => {
-  const products = useSelector((store) => store.cart.products);
-  console.log(JSON.stringify(products));
-  const navigate = useNavigate();
+  const { products, finalPrice } = useSelector((store) => store.cart);
 
+  console.log(JSON.stringify(products));
   return (
     <>
       <div className=" limes flex  ">
@@ -32,25 +31,26 @@ export const Cart = () => {
                     products.map((p) => <CartItem data={p} key={p.id} />)}
                 </div>
               </div>
-
-              {/* {totalAmount > 0 ? ( */}
-              <div className=" price flex justify-center text-bold ">
-                <p className="text-3xl">Total price: </p>
-                <p className="text-lightGreen text-3xl">0 €</p>
-              </div>
-              <Link to="/CheckOut" className="no-underline">
-                <div className="flex justify-center mt-4">
-                  <button
-                    className=" px-3 py-2  bg-lightGreen
+              {finalPrice > 0 ? (
+                <div>
+                  <div className=" price flex justify-center text-bold ">
+                    <p className="text-3xl">Total price: </p>
+                    <p className="text-lightGreen text-3xl">{finalPrice} €</p>
+                  </div>
+                  <Link to="/CheckOut" className="no-underline">
+                    <div className="flex justify-center mt-4">
+                      <button
+                        className=" px-3 py-2  bg-lightGreen
                     hover:bg-navBg text-white  active:bg-lightGreen text-bold text-3xl rounded-xl"
-                  >
-                    PROCEED TO CHECKOUT
-                  </button>
+                      >
+                        PROCEED TO CHECKOUT
+                      </button>
+                    </div>
+                  </Link>
                 </div>
-              </Link>
-              {/* ) : (
+              ) : (
                 <h1> Your Shopping Cart is Empty</h1>
-              )} */}
+              )}
             </MDBCol>
           </MDBRow>
         </MDBContainer>

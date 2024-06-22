@@ -1,15 +1,11 @@
 import Card from "react-bootstrap/Card";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { add, calculateTotals } from "../store/cartSlice";
-import { useState } from "react";
 
 export const Prod = (prop) => {
   const { product_name, price, image } = prop.data;
   const dispatch = useDispatch();
-  // const [initValue, setInitValue] = useState(0);
-  // const { products } = useSelector((store) => store.cart);
-
-  const dispachAndFilter = (data) => {
+  const adding = (data) => {
     dispatch(add(data));
     dispatch(calculateTotals());
   };
@@ -31,7 +27,7 @@ export const Prod = (prop) => {
             <button
               className="addToCartBttn px-2 py-2  bg-lightGreen 
                     hover:bg-navBg text-white  active:bg-lightGreen text-bold text-xl rounded-lg"
-              onClick={() => dispachAndFilter(prop.data)}
+              onClick={() => adding(prop.data)}
             >
               Add To Cart
             </button>

@@ -1,7 +1,7 @@
-import { Link } from "phosphor-react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import { useDispatch } from "react-redux";
+import { add, calculateTotals } from "../../store/cartSlice";
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
@@ -29,7 +29,8 @@ const preview = [
     id: 1,
     product_name: "Lentils",
     category: "Legumes",
-    price: "2.00 €",
+    price: 2,
+    quantityToBuy: 0,
     quantity: "1 kg",
     image: "./images/foods/lentils.jpg",
   },
@@ -37,7 +38,8 @@ const preview = [
     id: 4,
     product_name: "Oats",
     category: "Grains",
-    price: "2.00 €",
+    price: 2,
+    quantityToBuy: 0,
     quantity: "1 kg",
     image: "./images/foods/oats.jpg",
   },
@@ -45,7 +47,8 @@ const preview = [
     id: 7,
     product_name: "Spinach",
     category: "Vegetables",
-    price: "2.00 €",
+    price: 2,
+    quantityToBuy: 0,
     quantity: "1 kg",
     image: "./images/foods/spinach.jpg",
   },
@@ -53,7 +56,8 @@ const preview = [
     id: 11,
     product_name: "Strawberries",
     category: "Fruits",
-    price: "3.00 €",
+    price: 2,
+    quantityToBuy: 0,
     quantity: "1 kg",
     image: "./images/foods/strawberries.jpg",
   },
@@ -61,7 +65,8 @@ const preview = [
     id: 16,
     product_name: "Whole wheat pasta",
     category: "Pasta and Noodles",
-    price: "2.00 €",
+    price: 2,
+    quantityToBuy: 0,
     quantity: "500 g",
     image: "./images/foods/pasta.jpg",
   },
@@ -69,7 +74,8 @@ const preview = [
     id: 19,
     product_name: "Kimchi",
     category: "Fermented Foods",
-    price: "2.50 €",
+    price: 2,
+    quantityToBuy: 0,
     quantity: "500 g",
     image: "./images/foods/kimchi.jpg",
   },
@@ -81,6 +87,11 @@ const sliderWriting = {
   textAlign: "center",
 };
 const Slides2 = () => {
+  const dispatch = useDispatch();
+  const adding = (data) => {
+    dispatch(add(data));
+    dispatch(calculateTotals());
+  };
   return (
     <div className="slides2 ">
       <h2 className="d-flex justify-center text-bold mb-4 ">TOP PRODUCTS</h2>
@@ -105,18 +116,18 @@ const Slides2 = () => {
               <div className="flex flex-col h-44 items-center pt-4 ">
                 <p className="p-0 m-0">{p.product_name}</p>
                 <p className="text-lightGreen text-xl font-semibold p-0 m-0">
-                  {p.price}
+                  {p.price} €
                 </p>
                 <p className="p-0 m-0">{p.quantity}</p>
-                <a href="/Cart">
-                  <button
-                    className="bottom-center mt-3 p-2 rounded-xl  bg-lightGreen
+
+                <button
+                  className="addToCartBttn bottom-center mt-3 p-2 rounded-xl  bg-lightGreen
                     hover:bg-navBg text-white  active:bg-lightGreen text-bold"
-                    style={sliderWriting}
-                  >
-                    Add to cart
-                  </button>
-                </a>
+                  onClick={() => adding(p)}
+                  style={sliderWriting}
+                >
+                  Add to cart
+                </button>
               </div>
             </div>
           ))}

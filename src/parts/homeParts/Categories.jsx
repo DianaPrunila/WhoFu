@@ -11,10 +11,11 @@ function Categories() {
   const categ = [
     {
       id: 1,
-      name: "Vegetables",
-      source: "/images/foods/Vegetables.jpg",
-      path: "/Vegetables",
+      name: "All Products",
+      source: "/images/foods/AllProducts.jpg",
+      path: "/AllProducts",
     },
+
     {
       id: 2,
       name: "Grains",
@@ -35,9 +36,9 @@ function Categories() {
     },
     {
       id: 5,
-      name: "Nuts & Seeds",
-      source: "/images/foods/NutsSeeds.webp",
-      path: "/NutsSeeds",
+      name: "Vegetables",
+      source: "/images/foods/Vegetables.jpg",
+      path: "/Vegetables",
     },
     {
       id: 6,
@@ -59,7 +60,7 @@ function Categories() {
         style={{ backGround: "white" }}
       >
         {categ.map((c) => (
-          <div className="img">
+          <div key={c.id} className="img">
             <Link to={c.path}>
               <Container className="p-0 ">
                 <figure className="position-relative ">
