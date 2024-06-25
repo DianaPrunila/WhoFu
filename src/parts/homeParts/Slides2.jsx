@@ -1,7 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useDispatch } from "react-redux";
-import { add, calculateTotals } from "../../store/cartSlice";
+import { add, calculateTotalPrice } from "../../store/cartSlice";
 const responsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
@@ -90,7 +90,7 @@ const Slides2 = () => {
   const dispatch = useDispatch();
   const adding = (data) => {
     dispatch(add(data));
-    dispatch(calculateTotals());
+    dispatch(calculateTotalPrice());
   };
   return (
     <div className="slides2 ">

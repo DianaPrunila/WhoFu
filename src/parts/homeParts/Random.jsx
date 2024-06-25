@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { add, calculateTotals } from "../../store/cartSlice";
+import { add, calculateTotalPrice } from "../../store/cartSlice";
 import { PRODUCTS } from "../../../public/products";
 const Random = () => {
   const randomWriting = {
@@ -17,7 +17,7 @@ const Random = () => {
   const dispatch = useDispatch();
   const adding = (data) => {
     dispatch(add(data));
-    dispatch(calculateTotals());
+    dispatch(calculateTotalPrice());
     return (
       <>
         <h2 className="flex flex-col flex-wrap  mb-4 content-center text-bold">

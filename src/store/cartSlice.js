@@ -29,12 +29,12 @@ const cartSlice = createSlice({
     },
     removeItem: (state, { payload }) => {
       state.products = state.products.filter((item) => item.id !== payload.id);
-      console.log(state.products);
+      // console.log(state.products);
     },
     increase: (state, { payload }) => {
       const cartItem = state.products.find((item) => item.id === payload.id);
       cartItem.quantityToBuy = cartItem.quantityToBuy + 1;
-      console.log(state.products);
+      // console.log(state.products);
     },
     decrease: (state, { payload }) => {
       const cartItem = state.products.find((item) => item.id === payload.id);
@@ -45,9 +45,9 @@ const cartSlice = createSlice({
           (item) => item.id !== payload.id
         );
       }
-      console.log(state.products);
+      // console.log(state.products);
     },
-    calculateTotals: (state) => {
+    calculateTotalPrice: (state) => {
       let initQuantity = 0;
       let initFinalPrice = 0;
       state.products.forEach((item) => {
@@ -56,13 +56,23 @@ const cartSlice = createSlice({
       });
       state.totalQuantity = initQuantity;
       state.finalPrice = initFinalPrice;
-      console.log(state.totalQuantity);
-      console.log(state.finalPrice);
+      // console.log(state.totalQuantity);
+      // console.log(state.finalPrice);
     },
+    // quantityProduct: (state) => {
+    //   let initQuantity = 0;
+    //   let initFinalPrice = 0;
+    //   state.products((item) => {
+    //     initQuantity += item.quantityToBuy;
+    //     initFinalPrice += item.quantityToBuy * item.price;
+    //   });
+    //   state.totalQuantityProduct = initQuantity;
+    //   state.finalPriceProduct = initFinalPrice;
+    // },
   },
 });
 
-export const { add, removeItem, increase, decrease, calculateTotals } =
+export const { add, removeItem, increase, decrease, calculateTotalPrice } =
   cartSlice.actions;
 
 export default cartSlice.reducer;

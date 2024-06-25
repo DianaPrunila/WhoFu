@@ -3,7 +3,7 @@ import {
   removeItem,
   increase,
   decrease,
-  calculateTotals,
+  calculateTotalPrice,
 } from "../store/cartSlice";
 import {
   MDBBtn,
@@ -17,28 +17,31 @@ import {
   MDBTypography,
 } from "mdb-react-ui-kit";
 import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 const totals = (data) => {
-  dispatch(calculateTotals(data));
+  dispatch(calculateTotalPrice(data));
 };
 // onClick={() => totals(prop.data)}
 
 export const CartItem = (prop) => {
   const { id, product_name, price, image } = prop.data;
-  const [value, setValue] = useState("");
+  const { cartItem, quantityToBuy, totalQuantity, finalPriceProduct } =
+    useSelector((store) => store.cart);
+  // const [value, setValue] = useState("");
   const dispatch = useDispatch();
   const increasing = (data) => {
     dispatch(increase(data));
-    dispatch(calculateTotals());
+    dispatch(calculateTotalPrice());
   };
 
   const decreasing = (data) => {
     dispatch(decrease(data));
-    dispatch(calculateTotals());
+    dispatch(calculateTotalPrice());
   };
   const removing = (data) => {
     dispatch(removeItem(data));
-    dispatch(calculateTotals());
+    dispatch(calculateTotalPrice());
   };
   return (
     <MDBCard className="rounded-3 mb-4">
@@ -72,12 +75,12 @@ export const CartItem = (prop) => {
               <MDBIcon fas icon="minus" />
             </MDBBtn>
 
-            {/* <MDBInput
-              min={0}
-              type="number"
-              onChange={(e) => setValue(e.target.value)}
-            /> */}
-            {/* {cartItemAmount > 0 && <> ({cartItemAmount})</>} */}
+            <MDBInput
+              min={1}
+              // type="number"
+              // onChange={(e) => setValue(e.target.value)}
+            />
+
             <MDBBtn
               color="link"
               className="px-2"
@@ -91,6 +94,8 @@ export const CartItem = (prop) => {
               {/* {totals(prop.data)} € */}
               {/* {totals(prop.data) > 0 && <> ({totals(prop.data)})</>}€ */}
               {/* {()=> increasing(prop.data)} */}
+              {finalPriceProduct}
+              {/* {totalQuantity} */}
             </MDBTypography>
           </MDBCol>
           <MDBCol md="1" lg="1" xl="1" className="text-end">

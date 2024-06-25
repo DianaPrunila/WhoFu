@@ -10,7 +10,7 @@ import { useSelector } from "react-redux";
 export const Cart = () => {
   const { products, finalPrice } = useSelector((store) => store.cart);
 
-  console.log(JSON.stringify(products));
+  // console.log(JSON.stringify(products));
   return (
     <>
       <div className=" limes flex  ">

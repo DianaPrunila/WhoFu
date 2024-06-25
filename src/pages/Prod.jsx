@@ -1,13 +1,13 @@
 import Card from "react-bootstrap/Card";
 import { useDispatch } from "react-redux";
-import { add, calculateTotals } from "../store/cartSlice";
+import { add, calculateTotalPrice } from "../store/cartSlice";
 
 export const Prod = (prop) => {
   const { product_name, price, image } = prop.data;
   const dispatch = useDispatch();
   const adding = (data) => {
     dispatch(add(data));
-    dispatch(calculateTotals());
+    dispatch(calculateTotalPrice());
   };
 
   return (
