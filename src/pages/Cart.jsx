@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
 import { useSelector } from "react-redux";
 
-export const Cart = () => {
+export const Cart = (prop) => {
   const { products, finalPrice } = useSelector((store) => store.cart);
 
   // console.log(JSON.stringify(products));
@@ -27,8 +27,9 @@ export const Cart = () => {
             <MDBCol md="10">
               <div>
                 <div>
-                  {products &&
-                    products.map((p) => <CartItem data={p} key={p.id} />)}
+                  {products.map((p) => (
+                    <CartItem data={p} key={p.id} />
+                  ))}
                 </div>
               </div>
               {finalPrice > 0 ? (
