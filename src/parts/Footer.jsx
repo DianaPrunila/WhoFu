@@ -33,16 +33,7 @@ export default function Footer() {
                   About us
                 </a>
               </p>
-              <p style={{ marginBottom: "0px" }}>
-                <a href="../Blog" className="text-reset">
-                  Blog
-                </a>
-              </p>
-              <p style={{ marginBottom: "0px" }}>
-                <a href="../Cart" className="text-reset">
-                  Check out
-                </a>
-              </p>
+
               <p style={{ marginBottom: "0px" }}>
                 <a href="../Contact" className="text-reset">
                   Contact
@@ -52,6 +43,11 @@ export default function Footer() {
 
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Categories</h6>
+              <p style={{ marginBottom: "0px" }}>
+                <a href="../AllProducts" className="text-reset">
+                  All Products
+                </a>
+              </p>
               <p style={{ marginBottom: "0px" }}>
                 <a href="../Fermented" className="text-reset">
                   Fermented Foods
@@ -72,11 +68,7 @@ export default function Footer() {
                   Legumes
                 </a>
               </p>
-              <p style={{ marginBottom: "0px" }}>
-                <a href="../NutsSeeds" className="text-reset">
-                  Nuts & Seeds
-                </a>
-              </p>
+
               <p style={{ marginBottom: "0px" }}>
                 <a href="../Pasta" className="text-reset">
                   Pasta
@@ -93,7 +85,7 @@ export default function Footer() {
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p style={{ marginBottom: "0px" }}>
                 <MDBIcon icon="home" className="me-2" />
-                New York, NY 10012, US
+                Vienna, W 10012
               </p>
               <p style={{ marginBottom: "0px" }}>
                 <MDBIcon icon="envelope" className="me-3" />

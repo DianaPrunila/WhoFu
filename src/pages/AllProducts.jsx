@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { PRODUCTS } from "../../public/products";
 import { Prod } from "./Prod";
 
@@ -10,7 +11,9 @@ export const AllProducts = () => {
 
       <div className="products flex flex-wrap justify-center w-full gap-x-9 gap-y-8">
         {PRODUCTS.map((p) => (
-          <Prod data={p} key={p.id} />
+          <div>
+            <Prod data={p} key={p.id} />
+          </div>
         ))}
       </div>
     </div>

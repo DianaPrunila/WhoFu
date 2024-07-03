@@ -22,8 +22,9 @@ import Fermented from "./pages/Fermented";
 import Fruits from "./pages/Fruits";
 import Grains from "./pages/Grains";
 import Legumes from "./pages/Legumes";
+import List from "./pages/List";
 import Pasta from "./pages/Pasta";
-import NutsSeeds from "./pages/NutsSeeds";
+import SgProd from "./pages/SgProd";
 import Vegetables from "./pages/Vegetables";
 import { PersistGate } from "redux-persist/integration/react";
 
@@ -33,6 +34,7 @@ const routes = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="/About" element={<About />} />
       <Route path="/AllProducts" element={<AllProducts />} />
+      <Route path="/AllProducts/:id" element={<SgProd />} />
       <Route path="/Blog" element={<Blog />} />
       <Route path="/Cart" element={<Cart />} />
       <Route path="/CheckOut" element={<CheckOut />} />
@@ -43,8 +45,8 @@ const routes = createBrowserRouter(
       <Route path="/Grains" element={<Grains />} />
       <Route path="/Legumes" element={<Legumes />} />
       <Route path="/Pasta" element={<Pasta />} />
-      <Route path="/NutsSeeds" element={<NutsSeeds />} />
       <Route path="/Vegetables" element={<Vegetables />} />
+
       <Route
         path="*"
         element={
