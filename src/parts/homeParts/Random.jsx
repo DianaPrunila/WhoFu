@@ -37,7 +37,7 @@ const Random = () => {
           <div className="d-flex flex-col h-40 items-center pt-4 mb-2">
             <p className="p-0 m-0">{nameP}</p>
             <p className="text-lightGreen text-xl font-semibold p-0 m-0">
-              {priceP}
+              {priceP} €
             </p>
             <p className="p-0 m-0">{quantityP}</p>
 

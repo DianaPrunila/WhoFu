@@ -17,7 +17,7 @@ import Blog from "./pages/Blog";
 import { Cart } from "./pages/Cart";
 import CheckOut from "./pages/CheckOut";
 import Contact from "./pages/Contact";
-import Favorites from "./pages/Favorites";
+
 import Fermented from "./pages/Fermented";
 import Fruits from "./pages/Fruits";
 import Grains from "./pages/Grains";
@@ -39,13 +39,18 @@ const routes = createBrowserRouter(
       <Route path="/Cart" element={<Cart />} />
       <Route path="/CheckOut" element={<CheckOut />} />
       <Route path="/Contact" element={<Contact />} />
-      <Route path="/Favorites" element={<Favorites />} />
       <Route path="/Fermented" element={<Fermented />} />
+      <Route path="/Fermented/:id" element={<SgProd />} />
       <Route path="/Fruits" element={<Fruits />} />
+      <Route path="/Fruits/:id" element={<SgProd />} />
       <Route path="/Grains" element={<Grains />} />
+      <Route path="/Grains/:id" element={<SgProd />} />
       <Route path="/Legumes" element={<Legumes />} />
+      <Route path="/Legumes/:id" element={<SgProd />} />
       <Route path="/Pasta" element={<Pasta />} />
+      <Route path="/Pasta/:id" element={<SgProd />} />
       <Route path="/Vegetables" element={<Vegetables />} />
+      <Route path="/Vegetables/:id" element={<SgProd />} />
 
       <Route
         path="*"

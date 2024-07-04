@@ -6,7 +6,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "1 kg",
     quantityToBuy: 0,
-    image: "./images/foods/lentils.jpg",
+    image: "/images/foods/lentils.jpg",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "1 kg",
     quantityToBuy: 0,
-    image: "./images/foods/chickpeas.jpg",
+    image: "/images/foods/chickpeas.jpg",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "1 kg",
     quantityToBuy: 0,
-    image: "./images/foods/beans.jpg",
+    image: "/images/foods/beans.jpg",
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "1 kg",
     quantityToBuy: 0,
-    image: "./images/foods/oats.jpg",
+    image: "/images/foods/oats.jpg",
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "1 kg",
     quantityToBuy: 0,
-    image: "./images/foods/bulgur.jpg",
+    image: "/images/foods/bulgur.jpg",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "1 kg",
     quantityToBuy: 0,
-    image: "./images/foods/quinoa.jpg",
+    image: "/images/foods/quinoa.jpg",
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "1 kg",
     quantityToBuy: 0,
-    image: "./images/foods/spinach.jpg",
+    image: "/images/foods/spinach.jpg",
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "1 kg",
     quantityToBuy: 0,
-    image: "./images/foods/broccoli.jpg",
+    image: "/images/foods/broccoli.jpg",
   },
   {
     id: 9,
@@ -78,7 +78,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "1 kg",
     quantityToBuy: 0,
-    image: "./images/foods/carrots.jpg",
+    image: "/images/foods/carrots.jpg",
   },
   {
     id: 10,
@@ -87,7 +87,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "each",
     quantityToBuy: 0,
-    image: "./images/foods/avocado.jpg",
+    image: "/images/foods/avocado.jpg",
   },
   {
     id: 11,
@@ -96,7 +96,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "1 kg",
     quantityToBuy: 0,
-    image: "./images/foods/strawberries.jpg",
+    image: "/images/foods/strawberries.jpg",
   },
   {
     id: 12,
@@ -105,7 +105,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "1 kg",
     quantityToBuy: 0,
-    image: "./images/foods/raspberries.jpg",
+    image: "/images/foods/raspberries.jpg",
   },
   {
     id: 13,
@@ -114,7 +114,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "1 kg ",
     quantityToBuy: 0,
-    image: "./images/foods/tomatos.jpg",
+    image: "/images/foods/tomatos.jpg",
   },
   {
     id: 14,
@@ -123,7 +123,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "1 kg",
     quantityToBuy: 0,
-    image: "./images/foods/cherry.jpg",
+    image: "/images/foods/cherry.jpg",
   },
   {
     id: 15,
@@ -132,7 +132,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "500 g",
     quantityToBuy: 0,
-    image: "./images/foods/edamame.jpg",
+    image: "/images/foods/edamame.jpg",
   },
   {
     id: 16,
@@ -141,7 +141,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "500 g",
     quantityToBuy: 0,
-    image: "./images/foods/pasta.jpg",
+    image: "/images/foods/pasta.jpg",
   },
   {
     id: 17,
@@ -150,7 +150,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "300 g",
     quantityToBuy: 0,
-    image: "./images/foods/soba.jpg",
+    image: "/images/foods/soba.jpg",
   },
   {
     id: 18,
@@ -159,7 +159,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "300 g",
     quantityToBuy: 0,
-    image: "./images/foods/udon.jpg",
+    image: "/images/foods/udon.jpg",
   },
   {
     id: 19,
@@ -168,7 +168,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "500 g",
     quantityToBuy: 0,
-    image: "./images/foods/kimchi.jpg",
+    image: "/images/foods/kimchi.jpg",
   },
   {
     id: 20,
@@ -177,7 +177,7 @@ export const PRODUCTS = [
     price: 2,
     quantity: "150 g",
     quantityToBuy: 0,
-    image: "./images/foods/yogurt.webp",
+    image: "/images/foods/yogurt.webp",
   },
   {
     id: 21,
@@ -186,6 +186,6 @@ export const PRODUCTS = [
     price: 2,
     quantity: "200 g",
     quantityToBuy: 0,
-    image: "./images/foods/miso.jpg",
+    image: "/images/foods/miso.jpg",
   },
 ];

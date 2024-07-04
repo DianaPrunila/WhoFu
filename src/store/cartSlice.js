@@ -12,7 +12,6 @@ const cartSlice = createSlice({
   reducers: {
     add: (state, { payload }) => {
       const prod = { ...payload, quantityToBuy: 1 };
-      // const findProd = state.products.find((p) => p.id === payload.id);
 
       const indexProductId = state.products.findIndex(
         (p) => p.id === payload.id
@@ -29,12 +28,10 @@ const cartSlice = createSlice({
     },
     removeItem: (state, { payload }) => {
       state.products = state.products.filter((item) => item.id !== payload.id);
-      // console.log(state.products);
     },
     increase: (state, { payload }) => {
       const cartItem = state.products.find((item) => item.id === payload.id);
       cartItem.quantityToBuy = cartItem.quantityToBuy + 1;
-      // console.log(state.products);
     },
     decrease: (state, { payload }) => {
       const cartItem = state.products.find((item) => item.id === payload.id);
@@ -45,7 +42,6 @@ const cartSlice = createSlice({
           (item) => item.id !== payload.id
         );
       }
-      // console.log(state.products);
     },
     calculateTotalPrice: (state) => {
       let initQuantity = 0;

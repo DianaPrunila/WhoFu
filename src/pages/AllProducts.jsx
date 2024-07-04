@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { PRODUCTS } from "../../public/products";
 import { Prod } from "./Prod";
 

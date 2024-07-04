@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   removeItem,
   increase,
@@ -16,16 +15,10 @@ import {
   MDBRow,
   MDBTypography,
 } from "mdb-react-ui-kit";
-import { useDispatch, useSelector } from "react-redux";
-
-// const totals = (data) => {
-//   dispatch(calculateTotalPrice(data));
-// };
-// onClick={() => totals(prop.data)}
+import { useDispatch } from "react-redux";
 
 export const CartItem = (prop) => {
   const { id, product_name, price, image, quantityToBuy, quantity } = prop.data;
-  // const [value, setValue] = useState("");
 
   const dispatch = useDispatch();
   const increasing = (data) => {
@@ -56,8 +49,8 @@ export const CartItem = (prop) => {
           <MDBCol md="3" lg="3" xl="3">
             <p className="lead fw-normal mb-2 text-bold">{product_name}</p>
             <p className="flex flex-col">
-              <span className="text-muted">Price: {price} € </span>
-              <span className="text-muted">Quantity: {quantity} </span>
+              <span>Price: {price} € </span>
+              <span>Quantity: {quantity} </span>
             </p>
           </MDBCol>
           <MDBCol
@@ -67,23 +60,17 @@ export const CartItem = (prop) => {
             className="d-flex align-items-center justify-content-around"
           >
             <MDBBtn
-              color="link"
-              className="px-2 "
+              color="light"
+              className="px-2 text-success"
               onClick={() => decreasing(prop.data)}
             >
               <MDBIcon fas icon="minus" />
             </MDBBtn>
 
-            <MDBInput
-              min={1}
-              // type="number"
-              // onChange={(e) => setValue(e.target.value)}
-              value={quantityToBuy || 0}
-              // readOnly
-            />
+            <MDBInput type="number" min={1} value={quantityToBuy} readOnly />
             <MDBBtn
-              color="link"
-              className="px-2"
+              color="light"
+              className="px-2 text-success"
               onClick={() => increasing(prop.data)}
             >
               <MDBIcon icon="plus" />
@@ -94,7 +81,13 @@ export const CartItem = (prop) => {
               {quantityToBuy * price} €
             </MDBTypography>
           </MDBCol>
-          <MDBCol md="1" lg="1" xl="1" className="text-end">
+          <MDBCol
+            md="1"
+            lg="1"
+            xl="1"
+            className="text-end"
+            onClick={() => removing(prop.data)}
+          >
             <MDBIcon
               fas
               icon="trash text-danger"
