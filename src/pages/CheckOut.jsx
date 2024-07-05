@@ -1,5 +1,6 @@
 import limes from "/images/other/limes.png";
 import { MDBRow, MDBCol, MDBInput } from "mdb-react-ui-kit";
+import PopUp from "../parts/PopUp";
 
 const CheckOut = () => {
   return (
@@ -75,12 +76,7 @@ const CheckOut = () => {
             />
           </form>
           <div className="flex justify-center my-4">
-            <button
-              className=" px-3 py-2  bg-lightGreen
-                    hover:bg-navBg text-white  active:bg-lightGreen text-bold text-2xl rounded-full"
-            >
-              Place order
-            </button>
+            <PopUp />
           </div>
         </div>
       </div>

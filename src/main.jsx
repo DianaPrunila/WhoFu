@@ -17,16 +17,15 @@ import Blog from "./pages/Blog";
 import { Cart } from "./pages/Cart";
 import CheckOut from "./pages/CheckOut";
 import Contact from "./pages/Contact";
-
 import Fermented from "./pages/Fermented";
 import Fruits from "./pages/Fruits";
 import Grains from "./pages/Grains";
 import Legumes from "./pages/Legumes";
-import List from "./pages/List";
 import Pasta from "./pages/Pasta";
+import { PersistGate } from "redux-persist/integration/react";
+import PopUp from "./parts/PopUp";
 import SgProd from "./pages/SgProd";
 import Vegetables from "./pages/Vegetables";
-import { PersistGate } from "redux-persist/integration/react";
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
@@ -49,6 +48,7 @@ const routes = createBrowserRouter(
       <Route path="/Legumes/:id" element={<SgProd />} />
       <Route path="/Pasta" element={<Pasta />} />
       <Route path="/Pasta/:id" element={<SgProd />} />
+      <Route path="/PopUp" element={<PopUp />} />
       <Route path="/Vegetables" element={<Vegetables />} />
       <Route path="/Vegetables/:id" element={<SgProd />} />
 
