@@ -29,7 +29,7 @@ export const Prod = (prop) => {
               <Link to={String(id)}>Details</Link>
             </p>
           </Card.Text>
-          <div className="flex  flex-col ">
+          <div className="flex flex-col ">
             <button
               className="addToCartBttn px-2 py-2  bg-lightGreen 
                     hover:bg-navBg text-white  active:bg-lightGreen text-bold text-xl rounded-lg"

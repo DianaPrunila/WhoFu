@@ -55,7 +55,7 @@ const routes = createBrowserRouter(
       <Route
         path="*"
         element={
-          <div className="text-red-700 font-extrabold d-flex justify-content-center  ">
+          <div className="text-red-700 font-extrabold d-flex justify-center">
             404
           </div>
         }

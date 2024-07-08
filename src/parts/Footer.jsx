@@ -5,6 +5,7 @@ import {
   MDBCol,
   MDBIcon,
 } from "mdb-react-ui-kit";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -107,9 +108,9 @@ export default function Footer() {
         style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
       >
         © 2024 Copyright:
-        <a className="text-reset fw-bold" href="/">
+        <Link className="text-reset fw-bold no-underline" href="/">
           WhoFu
-        </a>
+        </Link>
       </div>
     </MDBFooter>
   );

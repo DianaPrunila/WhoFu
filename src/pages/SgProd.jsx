@@ -3,17 +3,7 @@ import { increase, decrease, calculateTotalPrice } from "../store/cartSlice";
 import { useParams } from "react-router-dom";
 import { PRODUCTS } from "../../public/products";
 import { useDispatch } from "react-redux";
-import {
-  MDBBtn,
-  MDBCard,
-  MDBCardBody,
-  MDBCardImage,
-  MDBCol,
-  MDBIcon,
-  MDBInput,
-  MDBRow,
-  MDBTypography,
-} from "mdb-react-ui-kit";
+import { MDBBtn, MDBIcon, MDBInput, MDBTypography } from "mdb-react-ui-kit";
 
 const SgProd = (prop) => {
   const dispatch = useDispatch();
@@ -38,6 +28,9 @@ const SgProd = (prop) => {
   if (!product) {
     return <div>Loading...</div>;
   }
+  console.log(product.quantityToBuy);
+  console.log(product.quantity);
+  console.log(product.data);
 
   return (
     <div className="global  flex flex-col flex-wrap content-center  ">
@@ -65,7 +58,7 @@ const SgProd = (prop) => {
               <MDBBtn
                 color="light"
                 className="px-2 text-success"
-                onClick={() => decreasing(product)}
+                onClick={() => decreasing(product.data)}
               >
                 <MDBIcon fas icon="minus" />
               </MDBBtn>
@@ -78,7 +71,7 @@ const SgProd = (prop) => {
               <MDBBtn
                 color="light"
                 className="px-2 text-success"
-                onClick={() => increasing(product)}
+                onClick={() => increasing(product.data)}
               >
                 <MDBIcon icon="plus" />
               </MDBBtn>
