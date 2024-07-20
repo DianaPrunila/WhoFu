@@ -68,10 +68,11 @@ function NaviBar() {
                 <Nav.Link style={naviWriting} href="Cart">
                   <BsCart2 />
                 </Nav.Link>
-                <span style={naviWriting} className="p-2">
-                  {cart.totalQuantity}
-                </span>
               </div>
+
+              <span style={naviWriting} className="p-2">
+                {cart.totalQuantity}
+              </span>
             </div>
           </Nav>
         </Navbar.Collapse>
