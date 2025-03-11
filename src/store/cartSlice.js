@@ -52,19 +52,7 @@ const cartSlice = createSlice({
       });
       state.totalQuantity = initQuantity;
       state.finalPrice = initFinalPrice;
-      // console.log(state.totalQuantity);
-      // console.log(state.finalPrice);
     },
-    // quantityProduct: (state) => {
-    //   let initQuantity = 0;
-    //   let initFinalPrice = 0;
-    //   state.products((item) => {
-    //     initQuantity += item.quantityToBuy;
-    //     initFinalPrice += item.quantityToBuy * item.price;
-    //   });
-    //   state.totalQuantityProduct = initQuantity;
-    //   state.finalPriceProduct = initFinalPrice;
-    // },
   },
 });
 
